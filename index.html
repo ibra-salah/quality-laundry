@@ -3,19 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Quality Laundry – Professional Laundry & Dry Cleaning Services in Doha, Qatar. Fast pickup and delivery, premium cleaning, affordable prices.">
-<meta name="keywords" content="laundry, dry cleaning, ironing, carpet cleaning, laundry service, pickup delivery, Doha, Qatar">
+<meta name="description" content="Quality Laundry – Professional Laundry & Dry Cleaning Services. Fast pickup and delivery, premium cleaning, affordable prices.">
+<meta name="keywords" content="laundry, dry cleaning, ironing, carpet cleaning, laundry service, pickup delivery">
 <meta name="author" content="Quality Laundry">
-<meta name="robots" content="index, follow">
 <meta property="og:title" content="Quality Laundry – Premium Cleaning Services">
-<meta property="og:description" content="Professional laundry, dry cleaning, and ironing services with fast pickup & delivery in Doha, Qatar.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Quality Laundry – Premium Cleaning Services">
-<meta name="twitter:description" content="Professional laundry, dry cleaning, and ironing services with fast pickup & delivery in Doha, Qatar.">
+<meta property="og:description" content="Professional laundry, dry cleaning, and ironing services with fast pickup & delivery.">
+<link rel="canonical" href="https://qualitylaundry.com/">
 <title>Quality Laundry – Premium Cleaning Services</title>
-<link rel="canonical" href="https://qualitylaundry.com/">`
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quality Laundry – Premium Cleaning Services">
+<meta name="twitter:description" content="Professional laundry, dry cleaning, and ironing services with fast pickup & delivery.">
+<meta name="twitter:image" content="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png">
+
 
 <link rel="icon" href="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png">
 <link rel="shortcut icon" href="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png">
@@ -23,7 +22,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap&font-display=swap" rel="stylesheet">
 
 <style>
 /* ===== CSS VARIABLES ===== */
@@ -1560,147 +1559,120 @@ section { padding: 100px 5%; }
   pointer-events: none;
 }
 
-/* ===== LANGUAGE SWITCHER ===== */
-.lang-switcher {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  background: rgba(12,77,103,0.07);
-  border: 1px solid rgba(12,77,103,0.15);
-  border-radius: 50px;
-  padding: 3px;
-  flex-shrink: 0;
+.footer-social a svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.lang-btn {
-  background: transparent;
-  border: none;
-  padding: 5px 13px;
-  border-radius: 50px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-light);
-  cursor: pointer;
-  transition: background var(--transition), color var(--transition);
-  letter-spacing: 0.03em;
-  line-height: 1.4;
-  font-family: var(--font-body);
+.footer-social a:hover svg {
+  transform: scale(1.15);
+  opacity: 0.8;
 }
-.lang-btn.active {
-  background: var(--brand-primary);
-  color: var(--white);
-  box-shadow: 0 2px 8px rgba(12,77,103,0.25);
+
+/* ===== PRICING LIST SECTION ===== */
+.pricing-list-section {
+  max-width: 1200px;
+  margin: 56px auto 0;
+  padding: 0 0 8px;
 }
-.lang-btn:not(.active):hover {
-  background: rgba(12,77,103,0.1);
+.pricing-list-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.pricing-list-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
   color: var(--brand-primary);
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
-
-/* Mobile lang switcher inside hamburger menu */
-.mobile-lang-switcher {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  background: rgba(12,77,103,0.07);
-  border: 1px solid rgba(12,77,103,0.15);
-  border-radius: 50px;
-  padding: 3px;
-  margin-top: 12px;
-  align-self: flex-start;
+.pricing-list-sub {
+  font-size: 1rem;
+  color: var(--text-light);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.65;
 }
-
-/* Arabic / RTL mode */
-html[lang="ar"] body {
-  font-family: 'Cairo', system-ui, sans-serif;
-  direction: rtl;
+.pricing-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
 }
-html[lang="ar"] #hero,
-html[lang="ar"] #about {
-  direction: rtl;
-  font-family: 'Cairo', system-ui, sans-serif;
+.pricing-img-frame {
+  background: var(--white);
+  border: 1.5px solid var(--gray-mid);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
 }
-html[lang="ar"] .hero-content,
-html[lang="ar"] .about-grid {
-  direction: rtl;
+.pricing-img-frame:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-accent);
 }
-html[lang="ar"] .nav-logo-text,
-html[lang="ar"] .nav-links,
-html[lang="ar"] #mobile-nav {
-  direction: ltr;
+.pricing-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
 }
-html[lang="ar"] .hero-desc,
-html[lang="ar"] .section-sub,
-html[lang="ar"] .feature-desc {
-  max-width: 100%;
+@media (max-width: 768px) {
+  .pricing-images-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pricing-list-section {
+    margin-top: 40px;
+  }
 }
-html[lang="ar"] #testimonials,
-html[lang="ar"] #contact,
-html[lang="ar"] #footer {
-  direction: rtl;
-  font-family: 'Cairo', system-ui, sans-serif;
-}
-/* Force slider internals to stay LTR so translateX math doesn't flip */
-html[lang="ar"] .testimonials-slider-wrap,
-html[lang="ar"] .testimonials-slider-clip,
-html[lang="ar"] .testimonials-track,
-html[lang="ar"] .testimonials-grid,
-html[lang="ar"] .testimonial-slide-inner {
-  direction: ltr;
-}
-/* But individual cards content stays RTL */
-html[lang="ar"] .testimonial-card {
-  direction: rtl;
-  text-align: right;
-}
-html[lang="ar"] .testimonial-author {
-  direction: rtl;
-}
-html[lang="ar"] .contact-form {
-  direction: rtl;
-}
-html[lang="ar"] .form-label {
-  text-align: right;
-}
-html[lang="ar"] .form-input,
-html[lang="ar"] .form-select,
-html[lang="ar"] .form-textarea {
-  text-align: right;
-  direction: rtl;
-}
-html[lang="ar"] .hero-btns {
-  direction: rtl;
-}
-html[lang="ar"] .hero-stats {
-  direction: rtl;
-}
-html[lang="ar"] .section-label {
-  direction: rtl;
-}
-html[lang="ar"] .about-img-badge {
-  right: auto;
-  left: -20px;
-}
-html[lang="ar"] .hero-label {
-  direction: rtl;
-}
-
-/* Hide desktop lang switcher on mobile; mobile one lives inside hamburger menu */
-@media(max-width: 768px) {
-  #desktop-lang-switcher { display: none !important; }
-}
-@media(min-width: 769px) {
-  .mobile-lang-switcher { display: none !important; }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pricing-images-grid {
+    gap: 16px;
+  }
 }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LaundryService",
+  "name": "Quality Laundry",
+  "image": "https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png",
+  "@id": "",
+  "url": "https://qualitylaundry.com/",
+  "telephone": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressLocality": "Doha",
+    "addressCountry": "QA"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "22:00"
+  }
+}
+</script>
 </head>
 <body>
-<a href="#hero" class="skip-link" style="position:absolute;left:-9999px;top:4px;z-index:10000;background:var(--brand-primary);color:#fff;padding:8px 16px;border-radius:4px;font-size:0.85rem;">Skip to main content</a>
 
 <!-- LOADER -->
 <!-- SHOPPING CART MODAL -->
 <div id="cart-modal">
   <div class="cart-modal-content">
     <div class="cart-modal-header">
-      <h2 class="cart-modal-title" id="cart-modal-title">Shopping Cart</h2>
+      <h2 class="cart-modal-title">Shopping Cart</h2>
       <button class="cart-modal-close" onclick="closeCart()">✕</button>
     </div>
     
@@ -1709,15 +1681,15 @@ html[lang="ar"] .hero-label {
       
       <div class="cart-checkout-form">
         <div class="form-group">
-          <label class="form-label" id="cart-label-name" for="cart-name">Full Name *</label>
+          <label class="form-label" for="cart-name">Full Name *</label>
           <input type="text" id="cart-name" class="form-input" placeholder="Your full name" required>
         </div>
         <div class="form-group">
-          <label class="form-label" id="cart-label-phone" for="cart-phone">Phone Number *</label>
+          <label class="form-label" for="cart-phone">Phone Number *</label>
           <input type="tel" id="cart-phone" class="form-input" placeholder="Your phone number" required>
         </div>
         <div class="form-group">
-          <label class="form-label" id="cart-label-area" for="cart-area">Area / Location *</label>
+          <label class="form-label" for="cart-area">Area / Location *</label>
           <input type="text" id="cart-area" class="form-input" placeholder="Your area or location" required>
         </div>
       </div>
@@ -1726,11 +1698,11 @@ html[lang="ar"] .hero-label {
       
       <div class="cart-summary">
         <div class="summary-row">
-          <span id="cart-label-subtotal">Subtotal:</span>
+          <span>Subtotal:</span>
           <span id="cart-subtotal">0 QAR</span>
         </div>
         <div class="summary-row total">
-          <span id="cart-label-total">Total:</span>
+          <span>Total:</span>
           <span id="cart-total">0 QAR</span>
         </div>
         <div class="cart-progress-bar">
@@ -1741,15 +1713,15 @@ html[lang="ar"] .hero-label {
       
       <button id="checkout-whatsapp-btn" class="btn btn-wa" style="width:100%;justify-content:center;font-size:1rem;padding:14px;" onclick="checkoutViaWhatsApp()">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span id="checkout-btn-text">Buy via WhatsApp</span>
+        Buy via WhatsApp
       </button>
     </div>
     
     <div id="cart-empty-state" style="display:none;">
       <div class="cart-empty-message">
         <div class="cart-empty-message-icon">🛒</div>
-        <p id="cart-empty-text">Your cart is empty</p>
-        <p id="cart-empty-subtext" style="font-size:0.85rem;margin-top:8px;">Add services or products to get started</p>
+        <p>Your cart is empty</p>
+        <p style="font-size:0.85rem;margin-top:8px;">Add services or products to get started</p>
       </div>
     </div>
   </div>
@@ -1758,7 +1730,7 @@ html[lang="ar"] .hero-label {
 <div id="loader">
   <div class="loader-logo-wrap">
     <div class="loader-logo-ring">
-      <img src="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png" alt="Quality Laundry Logo" class="loader-logo-img">
+      <img loading="lazy" src="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png" alt="Quality Laundry Logo" class="loader-logo-img">
     </div>
     <div class="loader-text" data-en="Quality Laundry">Quality Laundry</div>
   </div>
@@ -1767,7 +1739,7 @@ html[lang="ar"] .hero-label {
 <!-- NAVBAR -->
 <nav id="navbar" role="navigation" aria-label="Main navigation">
   <div class="nav-logo">
-    <img src="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png" alt="Quality Laundry" class="nav-logo-img">
+    <img loading="lazy" src="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png" alt="Quality Laundry" class="nav-logo-img">
     <span class="nav-logo-text" data-en="Quality <span>Laundry</span>">Quality <span>Laundry</span></span>
   </div>
   <ul class="nav-links" role="list">
@@ -1778,11 +1750,6 @@ html[lang="ar"] .hero-label {
     <li><a href="#testimonials" data-en="Reviews">Reviews</a></li>
     <li><a href="#contact" class="nav-cta" data-en="Contact Us">Contact Us</a></li>
   </ul>
-  <!-- Desktop Language Switcher -->
-  <div class="lang-switcher" id="desktop-lang-switcher">
-    <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')" aria-label="Switch to English">English</button>
-    <button class="lang-btn" id="btn-ar" onclick="setLanguage('ar')" aria-label="Switch to Arabic" style="font-family:'Cairo',sans-serif;">العربية</button>
-  </div>
   <button class="nav-cart-btn" onclick="openCart()">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <circle cx="9" cy="21" r="1"></circle>
@@ -1792,7 +1759,7 @@ html[lang="ar"] .hero-label {
     <span id="cart-count">0</span>
     <span class="cart-badge" id="cart-badge" style="display:none;">0</span>
   </button>
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+  <button class="hamburger" aria-label="Menu" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -1805,11 +1772,6 @@ html[lang="ar"] .hero-label {
   <a href="#gallery" onclick="closeMenu()" data-en="Gallery">Gallery</a>
   <a href="#testimonials" onclick="closeMenu()" data-en="Reviews">Reviews</a>
   <a href="#contact" onclick="closeMenu()" data-en="Contact Us">Contact Us</a>
-  <!-- Mobile Language Switcher -->
-  <div class="mobile-lang-switcher lang-switcher" id="mobile-lang-switcher">
-    <button class="lang-btn active" id="mobile-btn-en" onclick="setLanguage('en')" aria-label="Switch to English">English</button>
-    <button class="lang-btn" id="mobile-btn-ar" onclick="setLanguage('ar')" aria-label="Switch to Arabic" style="font-family:'Cairo',sans-serif;">العربية</button>
-  </div>
 </div>
 
 <!-- BACK TO TOP -->
@@ -1919,16 +1881,13 @@ html[lang="ar"] .hero-label {
     <div class="featured-offer-card">
       <div class="featured-offer-badge">⚡ LIMITED</div>
       <div class="featured-offer-image">
-        <img src="https://i.postimg.cc/FHL3NTCd/1.jpg" alt="Family Laundry Package" style="width:100%;height:100%;object-fit:cover;">
+        <img loading="lazy" src="https://i.postimg.cc/mgHCBmpc/2.jpg" alt="Family Laundry Package" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="featured-offer-body">
         <div class="featured-offer-title">Family Laundry Bag</div>
-        <div class="featured-offer-price">Wash & Iron - 99 QAR</div>
+        <div class="featured-offer-price">Wash & Iron - 79 QAR</div>
         <p class="featured-offer-desc">Perfect for families! Get complete laundry and ironing service for your entire household at an unbeatable price. Ideal for weekly family laundry needs.</p>
-        <button class="featured-offer-btn" 
-          data-en-name="Family Laundry Bag" data-en-price="99 QAR"
-          data-ar-name="كيس غسيل العائلة" data-ar-price="99 ريال"
-          onclick="addFeaturedOfferToCartLang(this)">
+        <button class="featured-offer-btn" onclick="addFeaturedOfferToCart('Family Laundry Bag', '79 QAR')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="9" cy="21" r="1"></circle>
             <circle cx="20" cy="21" r="1"></circle>
@@ -1943,16 +1902,13 @@ html[lang="ar"] .hero-label {
     <div class="featured-offer-card">
       <div class="featured-offer-badge">🚀 POPULAR</div>
       <div class="featured-offer-image">
-        <img src="https://i.postimg.cc/mgHCBmpc/2.jpg" alt="Express Cleaning Bundle" style="width:100%;height:100%;object-fit:cover;">
+        <img loading="lazy" src="https://i.postimg.cc/TYNrqcc4/4.jpg" alt="Express Cleaning Bundle" style="width:100%;height:100%;object-fit:cover;">
       </div>
       <div class="featured-offer-body">
         <div class="featured-offer-title">Express Cleaning Bundle</div>
-        <div class="featured-offer-price">Complete Service - 149 QAR</div>
+        <div class="featured-offer-price">Complete Service - 69 QAR</div>
         <p class="featured-offer-desc">Get everything done fast! Includes wash, dry cleaning, ironing, and express delivery. Perfect for busy professionals who need quality results quickly.</p>
-        <button class="featured-offer-btn"
-          data-en-name="Express Cleaning Bundle" data-en-price="149 QAR"
-          data-ar-name="باقة التنظيف السريع" data-ar-price="149 ريال"
-          onclick="addFeaturedOfferToCartLang(this)">
+        <button class="featured-offer-btn" onclick="addFeaturedOfferToCart('Express Cleaning Bundle', '69 QAR')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="9" cy="21" r="1"></circle>
             <circle cx="20" cy="21" r="1"></circle>
@@ -1965,6 +1921,23 @@ html[lang="ar"] .hero-label {
   </div>
 
 </div>
+
+  <!-- SERVICES & PRICING LIST -->
+  <div class="pricing-list-section reveal">
+    <div class="pricing-list-header">
+      <span class="section-label">Price List</span>
+      <h3 class="pricing-list-title">Our Services &amp; Pricing List</h3>
+      <p class="pricing-list-sub">Transparent pricing for every service — no hidden fees, just quality results.</p>
+    </div>
+    <div class="pricing-images-grid">
+      <div class="pricing-img-frame">
+        <img src="https://i.postimg.cc/pXxy35sK/a1.jpg" alt="Services & Pricing List – Page 1" class="pricing-img" loading="lazy">
+      </div>
+      <div class="pricing-img-frame">
+        <img src="https://i.postimg.cc/gkdr1Lgv/a2.jpg" alt="Services & Pricing List – Page 2" class="pricing-img" loading="lazy">
+      </div>
+    </div>
+  </div>
 
   <!-- Category Tabs (Desktop) -->
   <div class="services-tabs reveal">
@@ -2147,7 +2120,7 @@ html[lang="ar"] .hero-label {
 <div id="lightbox" role="dialog" aria-label="Image preview" aria-modal="true">
   <button id="lightbox-close" aria-label="Close">✕</button>
   <button id="lightbox-prev" aria-label="Previous">‹</button>
-  <img id="lightbox-img" src="" alt="Gallery preview">
+  <img loading="lazy" id="lightbox-img" src="" alt="Gallery preview">
   <button id="lightbox-next" aria-label="Next">›</button>
 </div>
 
@@ -2256,27 +2229,27 @@ html[lang="ar"] .hero-label {
 <footer id="footer" aria-label="Footer">
   <div class="footer-grid">
     <div>
-      <img src="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png" alt="Quality Laundry" class="footer-logo-img">
+      <img loading="lazy" src="https://i.postimg.cc/hvHdzf4P/Picsart-26-06-08-00-31-07-804.png" alt="Quality Laundry" class="footer-logo-img">
       <div class="footer-logo-text" data-en="Quality <span>Laundry</span>">Quality <span>Laundry</span></div>
       <p class="footer-tagline" data-en="Professional cleaning services delivered with care, speed, and a smile.">Professional cleaning services delivered with care, speed, and a smile.</p>
       <div class="footer-social">
         <!-- Facebook -->
-        <a href="https://www.facebook.com/share/193Gyt3y4u/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+        <a href="https://www.facebook.com/share/193Gyt3y4u/" target="_blank" rel="noopener" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
         <!-- Instagram -->
-        <a href="https://www.instagram.com/quali.tylaundry?igsh=MWo0dno2NTNuczR4Mg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+        <a href="https://www.instagram.com/quali.tylaundry?igsh=MWo0dno2NTNuczR4Mg==" target="_blank" rel="noopener" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
         </a>
         <!-- TikTok -->
-        <a href="https://www.tiktok.com/@quality_landryqa?_r=1&_t=ZS-976PoMKvXJy" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok">
+        <a href="https://www.tiktok.com/@quality_landryqa?_r=1&_t=ZS-976PoMKvXJy" target="_blank" rel="noopener" rel="noopener noreferrer" aria-label="TikTok" title="TikTok">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.89 2.89 0 0 1 2.31-4.64 2.86 2.86 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.96-.1z"/></svg>
         </a>
       </div>
     </div>
     <div>
       <div class="footer-col-title" data-en="Quick Links">Quick Links</div>
-      <ul class="footer-links" id="footer-quick-links">
+      <ul class="footer-links">
         <li><a href="#about" data-en="About Us">About Us</a></li>
         <li><a href="#services" data-en="Services">Services</a></li>
         <li><a href="#products" data-en="Products">Products</a></li>
@@ -2285,7 +2258,7 @@ html[lang="ar"] .hero-label {
     </div>
     <div>
       <div class="footer-col-title" data-en="Services">Services</div>
-      <ul class="footer-links" id="footer-services-links">
+      <ul class="footer-links">
         <li><a href="#services" data-en="Clothes Washing">Clothes Washing</a></li>
         <li><a href="#services" data-en="Dry Cleaning">Dry Cleaning</a></li>
         <li><a href="#services" data-en="Ironing Service">Ironing Service</a></li>
@@ -2294,72 +2267,23 @@ html[lang="ar"] .hero-label {
     </div>
     <div>
       <div class="footer-col-title" data-en="Contact">Contact</div>
-      <ul class="footer-links" id="footer-contact-links">
+      <ul class="footer-links">
         <li><a href="tel:+97477558870">+974 77558870</a></li>
         <li><a href="mailto:hello@qualitylaundry.com">hello@qualitylaundry.com</a></li>
-        <li><a href="#contact" data-en="Umm Qarn - Street 260 - Doha">Umm Qarn - Street 260 - Doha</a></li>
+        <li><a href="#contact" data-en="123 Fresh Street">Umm Qarn - Street 260 - Building 81 - Shop 4 - Doha, Qatar</a></li>
         <li><a href="#testimonials" data-en="Reviews">Reviews</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2026 <a href="#">Quality Laundry</a>. <span data-en="All rights reserved.">All rights reserved.</span></div>
-    <div class="footer-copy" data-en="Crafted with ❤️ for clean clothes everywhere">Crafted with ❤️ for clean clothes everywhere</div>
+    <div class="footer-copy">© 2024 <a href="#">Quality Laundry</a>. <span data-en="All rights reserved.">All rights reserved.</span></div>
+    <div class="footer-copy" data-en="Developed by Code Nexus">Developed by Code Nexus</div>
   </div>
 </footer>
 
 <script>
 /* ===== CONFIGURATION ===== */
 const whatsappNumber = "97477558870"; // Qatar +974 77558870
-
-/* ===== CURRENT LANGUAGE TRACKER ===== */
-let currentLang = 'en';
-
-/* ===== CART STRINGS ===== */
-const cartStrings = {
-  en: {
-    title: 'Shopping Cart',
-    labelName: 'Full Name *',
-    placeholderName: 'Your full name',
-    labelPhone: 'Phone Number *',
-    placeholderPhone: 'Your phone number',
-    labelArea: 'Area / Location *',
-    placeholderArea: 'Your area or location',
-    subtotal: 'Subtotal:',
-    total: 'Total:',
-    checkoutBtn: 'Buy via WhatsApp',
-    emptyText: 'Your cart is empty',
-    emptySubtext: 'Add services or products to get started',
-    removeBtn: 'Remove',
-    minNotice: 'Minimum order value is 50 QAR. Please add more items to continue.',
-    addMore: (n) => `Add ${n} QAR more to place your order.`,
-    readyMsg: 'Your order is ready for checkout!',
-    alertFields: 'Please fill in all required fields: Name, Phone, and Area',
-    alertEmpty: 'Your cart is empty. Please add items before checkout.',
-    alertMin: (total) => `Minimum order value is 50 QAR. Your current total is ${total} QAR. Please add more items to continue.`,
-  },
-  ar: {
-    title: 'سلة التسوق',
-    labelName: 'الاسم الكامل *',
-    placeholderName: 'اسمك الكامل',
-    labelPhone: 'رقم الهاتف *',
-    placeholderPhone: 'رقم هاتفك',
-    labelArea: 'المنطقة / الموقع *',
-    placeholderArea: 'منطقتك أو موقعك',
-    subtotal: 'المجموع الفرعي:',
-    total: 'الإجمالي:',
-    checkoutBtn: 'اشتر عبر واتساب',
-    emptyText: 'سلة التسوق فارغة',
-    emptySubtext: 'أضف خدمات أو منتجات للبدء',
-    removeBtn: 'حذف',
-    minNotice: 'الحد الأدنى للطلب 50 ريال. يرجى إضافة المزيد من العناصر للمتابعة.',
-    addMore: (n) => `أضف ${n} ريال إضافية لإتمام طلبك.`,
-    readyMsg: 'طلبك جاهز للدفع!',
-    alertFields: 'يرجى ملء جميع الحقول المطلوبة: الاسم، الهاتف، والمنطقة',
-    alertEmpty: 'سلة التسوق فارغة. يرجى إضافة عناصر قبل الدفع.',
-    alertMin: (total) => `الحد الأدنى للطلب 50 ريال. مجموعك الحالي ${total} ريال. يرجى إضافة المزيد للمتابعة.`,
-  }
-};
 
 /* ===== WHATSAPP HELPER ===== */
 function waLink(msg) {
@@ -2373,83 +2297,67 @@ const serviceCategories = [
   {
     id: 'everyday',
     items: [
-      { name: 'Thobe',             icon: '👘', price: '7 QAR',  desc: 'Expert wash & press for the classic white thobe. Bright finish with meticulous crease-free folding.' },
-      { name: 'Colored Thobe',     icon: '🎨', price: '8 QAR',  desc: 'Color-safe laundering for thobes of all shades. Preserves vibrancy with every professional wash.' },
-      { name: 'Ghutra',            icon: '🧣', price: '5 QAR',  desc: 'Precision cleaning and sharp pressing of the traditional white ghutra for a crisp, polished look.' },
-      { name: 'Colored Ghutra',    icon: '🌈', price: '6 QAR',  desc: 'Gentle fabric care for patterned and colored ghutras. Maintains original texture and drape.' },
-      { name: 'Pants',             icon: '👖', price: '6 QAR',  desc: 'Professional wash and iron for all trouser types. Sharp creases with a tailored finish every time.' },
-      { name: 'Shirt',             icon: '👔', price: '5 QAR',  desc: 'Thorough cleaning and crisp pressing for dress shirts and casual styles. Collar and cuffs handled with care.' },
-      { name: 'T-Shirt',           icon: '👕', price: '3 QAR',  desc: 'Fresh wash with colour-safe detergents for all T-shirt fabrics. Dried flat to preserve shape.' },
-      { name: 'Undershirt',        icon: '🩱', price: '3 QAR',  desc: 'Hygienic deep-clean for undershirts using dermatologically safe products. Soft and odour-free finish.' },
-      { name: 'Salwar / Trousers', icon: '🪡', price: '5 QAR',  desc: 'Careful laundering and pressing for salwar and loose-fit trousers. Shape retained throughout.' },
-      { name: 'Jalabiya',          icon: '✨', price: '8 QAR',  desc: 'Fabric-appropriate cleaning for traditional jalabiya garments. Delicate embroidery handled gently.' },
-      { name: 'Overall',           icon: '🦺', price: '10 QAR', desc: 'Heavy-duty cleaning for work overalls and coveralls. Removes stubborn grease, dust, and industrial stains.' },
-      { name: 'Shorts',            icon: '🩳', price: '3 QAR',  desc: 'Quick wash and press for shorts in all fabrics. Returned fresh and ready to wear.' },
-      { name: 'Hoodie',            icon: '🧤', price: '8 QAR',  desc: 'Gentle machine wash for hoodies and sweatshirts. Colour lock treatment preserves print and fabric.' },
-      { name: 'Vest',              icon: '🎽', price: '4 QAR',  desc: 'Quick wash and flat-dry for vests of all styles. Returned fresh and wrinkle-free.' },
-      { name: 'Polo Shirt',        icon: '👕', price: '5 QAR',  desc: 'Professional wash and light press for polo shirts. Collar shaped and colour preserved.' },
-      { name: 'Jeans',             icon: '👖', price: '7 QAR',  desc: 'Color-safe denim wash that removes stains without fading. Returned soft, clean, and shape-retained.' },
-      { name: 'Sportswear',        icon: '🏃', price: '5 QAR',  desc: 'Performance fabric-safe wash for gym wear and activewear. Odour-eliminating treatment included.' },
-      { name: 'Pyjama Set',        icon: '😴', price: '8 QAR',  desc: 'Gentle full-set wash for pyjamas and nightwear. Soft finish with skin-safe detergents.' },
-      { name: 'Kandora (Kids)',     icon: '👦', price: '4 QAR',  desc: 'Careful wash for children\'s kandoras. Bright white finish with hypoallergenic products safe for kids.' },
-      { name: 'School Uniform',    icon: '🏫', price: '5 QAR',  desc: 'Thorough wash and press for school uniforms. Crisp, neat, and ready for the next school day.' },
-      { name: 'Lab Coat',          icon: '🥼', price: '8 QAR',  desc: 'Hygienic high-temperature wash for lab and medical coats. Stain removal and sanitizing treatment included.' },
-      { name: 'Chef Uniform',      icon: '👨‍🍳', price: '10 QAR', desc: 'Heavy-duty cleaning for chef whites and uniforms. Grease and food stain removal with professional results.' },
-      { name: 'Security Uniform',  icon: '🛡️', price: '10 QAR', desc: 'Professional clean for security and corporate uniforms. Pressed crisp with badge areas carefully handled.' },
-      { name: 'Sweater',           icon: '🧶', price: '8 QAR',  desc: 'Gentle cold-wash for woollen and knitted sweaters. Dried flat to prevent stretching and deformation.' },
-      { name: 'Tracksuit',         icon: '🏅', price: '10 QAR', desc: 'Full-set wash for tracksuits and athletic outfits. Elastic and drawstrings handled with care.' },
-      { name: 'Kids Clothes Set',  icon: '🧸', price: '6 QAR',  desc: 'Safe and thorough wash for full children\'s clothing sets. Hypoallergenic products, soft and fresh results.' }
+      { name: 'Thobe',          icon: '👘', price: '7 QAR',  desc: 'Expert wash and press for the classic white thobe. Bright finish with meticulous crease-free folding.' },
+      { name: 'Colour Thobe',   icon: '🎨', price: '8 QAR',  desc: 'Color-safe laundering for thobes of all shades. Preserves vibrancy and fabric quality with every wash.' },
+      { name: 'Guthrah',        icon: '🧣', price: '5 QAR',  desc: 'Precision cleaning and sharp pressing of the traditional guthrah for a crisp, polished look.' },
+      { name: 'Colour Guthrah', icon: '🌈', price: '6 QAR',  desc: 'Gentle fabric care for patterned and coloured guthrabs. Maintains original texture and drape.' },
+      { name: 'Pants',          icon: '👖', price: '6 QAR',  desc: 'Professional wash and iron for all trouser types. Sharp creases with a tailored finish every time.' },
+      { name: 'Shirt',          icon: '👔', price: '5 QAR',  desc: 'Thorough cleaning and crisp pressing for dress and casual shirts. Collar and cuffs handled with care.' },
+      { name: 'T-Shirt',        icon: '👕', price: '3 QAR',  desc: 'Fresh wash with colour-safe detergents for all T-shirt fabrics. Dried flat to preserve shape.' },
+      { name: 'U Shirt',        icon: '🩱', price: '3 QAR',  desc: 'Hygienic deep-clean for undershirts using dermatologically safe products. Soft and odour-free finish.' },
+      { name: 'Salwar',         icon: '🪡', price: '5 QAR',  desc: 'Careful laundering and pressing for salwar trousers. Fabric shape and comfort retained throughout.' },
+      { name: 'Jalabiya',       icon: '✨', price: '8 QAR',  desc: 'Fabric-appropriate cleaning for traditional jalabiya garments. Delicate embroidery handled with care.' },
+      { name: 'Over Roll',      icon: '🦺', price: '10 QAR', desc: 'Heavy-duty cleaning for work overalls and coveralls. Removes stubborn grease, dust, and stains.' },
+      { name: 'Short',          icon: '🩳', price: '3 QAR',  desc: 'Quick wash and press for shorts in all fabrics. Returned clean, fresh, and ready to wear.' }
     ],
     express: false
   },
   {
     id: 'suits',
     items: [
-      { name: "Men's Suit",    icon: '🤵', price: '35 QAR', desc: 'Full dry cleaning for two-piece and three-piece suits. Steam pressed with expert attention to lapels and seams.' },
-      { name: 'Military Suit', icon: '🎖️', price: '40 QAR', desc: 'Specialist cleaning for military and official uniforms. Badges and insignia handled with precision care.' },
-      { name: 'Overcoat',      icon: '🧥', price: '30 QAR', desc: 'Deep clean and steam press for heavy overcoats and winter coats. Fully restored shape with no shrinkage.' },
-      { name: 'Jacket',        icon: '🧥', price: '15 QAR', desc: 'Professional dry clean or wash for all jacket styles. Lining treated carefully and shape fully restored.' },
-      { name: 'Raincoat',      icon: '🌧️', price: '12 QAR', desc: 'Specialist clean for waterproof and rain gear. Water-repellent properties maintained after washing.' },
+      { name: 'Mens Suit',     icon: '🤵', price: '35 QAR', desc: 'Full dry cleaning for two-piece and three-piece suits. Steam pressed with expert attention to lapels and seams.' },
+      { name: 'Military Suit', icon: '🎖️', price: '40 QAR', desc: 'Specialist cleaning for military and official uniforms. Badges and insignia handled with precision.' },
+      { name: 'Jacket',        icon: '🧥', price: '15 QAR', desc: 'Professional dry clean for all jacket styles. Lining treated carefully and shape fully restored.' },
       { name: 'Tie',           icon: '🪢', price: '5 QAR',  desc: 'Specialist dry cleaning for silk and synthetic ties. Spot treatment and pressing for a like-new finish.' },
-      { name: 'Shawl',         icon: '🧣', price: '8 QAR',  desc: 'Delicate hand-finish wash for shawls and wraps. Preserves softness, texture, and fringe details.' },
-      { name: 'Special Dress', icon: '✨', price: '50 QAR', desc: 'Premium cleaning for embellished and special-occasion dresses. Beadwork and delicate fabrics handled with utmost care.' }
+      { name: 'Over Coat',     icon: '🧥', price: '30 QAR', desc: 'Deep clean and steam press for heavy overcoats and winter coats. Shape fully restored with no shrinkage.' }
     ],
     express: false
   },
   {
     id: 'women',
     items: [
-      { name: 'Ladies Dress',      icon: '👗', price: '15 QAR', desc: 'Gentle fabric care for everyday and semi-formal ladies dresses. Colors protected and silhouette maintained.' },
-      { name: 'Abaya & Hijab Set', icon: '🧕', price: '18 QAR', desc: 'Combined cleaning for the full abaya and matching hijab set. Delivered fresh, pressed, and neatly packaged.' },
-      { name: 'Abaya',             icon: '🌙', price: '12 QAR', desc: 'Expert dry cleaning for abayas in all fabric types. Embroidery and stonework preserved with special treatment.' },
-      { name: 'Hijab',             icon: '🧕', price: '5 QAR',  desc: 'Delicate laundering for all hijab fabrics including chiffon, jersey, and linen. Returned soft and fresh.' },
-      { name: 'Blouse',            icon: '👚', price: '7 QAR',  desc: 'Careful wash and press for ladies blouses. Lace, buttons, and sheer fabrics given individual attention.' },
-      { name: 'Bra',               icon: '🩱', price: '5 QAR',  desc: 'Hygienic hand-wash for delicate lingerie items using gentle, skin-safe detergents. Shape and elasticity preserved.' }
+      { name: 'Ladies Dress',   icon: '👗', price: '15 QAR', desc: 'Gentle fabric care for everyday and semi-formal ladies dresses. Colors protected and silhouette maintained.' },
+      { name: 'Special Dress',  icon: '✨', price: '50 QAR', desc: 'Premium cleaning for embellished and special-occasion dresses. Beadwork and delicate fabrics handled with utmost care.' },
+      { name: 'Abaya And Hijab',icon: '🧕', price: '18 QAR', desc: 'Combined cleaning for the full abaya and matching hijab set. Delivered fresh, pressed, and neatly packaged.' },
+      { name: 'Abaya',          icon: '🌙', price: '12 QAR', desc: 'Expert dry cleaning for abayas in all fabric types. Embroidery and stonework preserved with special treatment.' },
+      { name: 'Hijab',          icon: '🧕', price: '5 QAR',  desc: 'Delicate laundering for all hijab fabrics including chiffon, jersey, and linen. Returned soft and fresh.' },
+      { name: 'Blouse',         icon: '👚', price: '7 QAR',  desc: 'Careful wash and press for ladies blouses. Lace, buttons, and sheer fabrics given individual attention.' },
+      { name: 'Shal',           icon: '🧣', price: '8 QAR',  desc: 'Delicate hand-finish wash for shals and wraps. Preserves softness, texture, and fringe details.' },
+      { name: 'Bra',            icon: '🩱', price: '5 QAR',  desc: 'Hygienic hand-wash for delicate lingerie using gentle, skin-safe detergents. Shape and elasticity preserved.' }
     ],
     express: false
   },
   {
     id: 'bedding',
     items: [
-      { name: 'Double Blanket', icon: '🌙', price: '25 QAR', desc: 'Deep clean for large double blankets. Heavy-duty washing removes dust mites, odors, and deep-set stains.' },
-      { name: 'Single Blanket', icon: '🌙', price: '15 QAR', desc: 'Professional cleaning for single blankets. Fluffy finish with residue-free rinse and fabric-safe softener.' },
-      { name: 'Bed Sheet',      icon: '🛏️', price: '10 QAR', desc: 'High-temperature wash for bed sheets to eliminate allergens and bacteria. Returned crisp, fresh, and neatly folded.' },
+      { name: 'Blanket Double', icon: '🌙', price: '25 QAR', desc: 'Deep clean for large double blankets. Heavy-duty washing removes dust mites, odours, and deep-set stains.' },
+      { name: 'Blanket Small',  icon: '🛏️', price: '15 QAR', desc: 'Professional cleaning for single blankets. Fluffy finish with residue-free rinse and fabric-safe softener.' },
+      { name: 'Bed Sheet',      icon: '🛏️', price: '10 QAR', desc: 'High-temperature wash for bed sheets to eliminate allergens and bacteria. Returned crisp and freshly folded.' },
       { name: 'Pillow Cover',   icon: '😴', price: '4 QAR',  desc: 'Thorough hygienic wash for pillow covers of all sizes. Softener treatment leaves them fresh and smooth.' },
-      { name: 'Towel',          icon: '🏖️', price: '5 QAR',  desc: 'Hygienic hot wash for all towels. Anti-bacterial treatment removes buildup while keeping fibres soft and fluffy.' },
-      { name: 'Bath Towel',     icon: '🛁', price: '7 QAR',  desc: 'Deep-clean service for large bath towels. Freshness-boosting wash restores absorbency and removes musty odors.' },
+      { name: 'Towel',          icon: '🏖️', price: '5 QAR',  desc: 'Hygienic hot wash for towels. Anti-bacterial treatment removes buildup while keeping fibres soft and fluffy.' },
+      { name: 'Bath Towel',     icon: '🛁', price: '7 QAR',  desc: 'Deep-clean service for large bath towels. Restores absorbency and removes musty odours effectively.' },
       { name: 'Face Towel',     icon: '🧼', price: '3 QAR',  desc: 'Gentle yet effective cleaning for face and hand towels using skin-safe, hypoallergenic detergents.' },
-      { name: 'Bath Robe',      icon: '🛁', price: '15 QAR', desc: 'Luxurious wash for cotton and terry bath robes. Absorbency and softness fully restored after every clean.' },
-      { name: 'Saver Bag',      icon: '🛍️', price: '45 QAR', desc: 'Economy bundle — fill the bag with mixed clothing items and enjoy a cost-effective wash at a flat rate.' }
+      { name: 'Bath Robe',      icon: '🧖', price: '15 QAR', desc: 'Luxurious wash for cotton and terry bath robes. Absorbency and softness fully restored after every clean.' }
     ],
     express: false
   },
   {
     id: 'curtains',
     items: [
-      { name: 'Small Curtain',     icon: '🪟', price: '20 QAR', desc: 'Professional washing and steam pressing for small curtains. Pleats and hooks carefully managed throughout.' },
-      { name: 'Large Curtain',     icon: '🏠', price: '40 QAR', desc: 'Full-service cleaning for heavy floor-to-ceiling curtains. Fabric treated, pressed, and re-hung-ready.' },
-      { name: 'Large Sofa Cover',  icon: '🛋️', price: '35 QAR', desc: 'Deep-clean service for large sofa and sectional covers. Stain treatment and fabric care included.' },
-      { name: 'Small Sofa Cover',  icon: '🪑', price: '20 QAR', desc: 'Gentle yet thorough clean for single-seat and small sofa covers. Shape and color fully restored.' }
+      { name: 'Small Curtain',    icon: '🪟', price: '20 QAR', desc: 'Professional washing and steam pressing for small curtains. Pleats and hooks carefully managed throughout.' },
+      { name: 'Large Curtain',    icon: '🏠', price: '40 QAR', desc: 'Full-service cleaning for heavy floor-to-ceiling curtains. Fabric treated, pressed, and re-hung-ready.' },
+      { name: 'Large Sofa Cover', icon: '🛋️', price: '35 QAR', desc: 'Deep-clean service for large sofa and sectional covers. Stain treatment and full fabric care included.' },
+      { name: 'Small Sofa Cover', icon: '🪑', price: '20 QAR', desc: 'Gentle yet thorough clean for single-seat and small sofa covers. Shape and color fully restored.' }
     ],
     express: false
   },
@@ -2463,16 +2371,14 @@ const serviceCategories = [
   {
     id: 'shoes',
     items: [
-      { name: 'Shoes', icon: '👟', price: '20 QAR', desc: 'Premium cleaning for leather, canvas, and suede shoes. Deodorized, polished, and returned box-fresh.' }
+      { name: 'Shoes', icon: '👟', price: '20 QAR', desc: 'Specialized cleaning for leather, canvas, and suede shoes. Deodorized, polished, and returned box-fresh.' }
     ],
     express: false
   },
   {
     id: 'express',
     items: [
-      { name: 'Urgent Pressing',       icon: '👔', price: '10 QAR', desc: 'Same-day express pressing for any garment. Professionally steamed and ready within hours.' },
-      { name: 'Urgent Wash & Press',   icon: '🫧', price: '15 QAR', desc: 'Fast-track full wash and press service completed same day. Ideal for last-minute needs.' },
-      { name: 'Urgent Dry Cleaning',   icon: '⚡', price: '20 QAR', desc: 'Priority dry cleaning with express turnaround. Perfect for suits, formal wear, and delicate garments.' }
+      { name: 'Saver Bag', icon: '🛍️', price: '45 QAR', desc: 'Economy bundle — fill the bag with mixed clothing items and enjoy a cost-effective wash at a flat rate.' }
     ],
     express: true
   }
@@ -2581,9 +2487,9 @@ renderServiceCategories();
 
 const products = [
   {
-    title: "Laundry Detergent",
-    price: "12.99 QAR",
-    desc: "Premium concentrated formula — effective in all temperatures, safe for all fabric types.",
+    title: "Premium Laundry Detergent",
+    price: "35.99 QAR",
+    desc: "High-performance liquid detergent for deep cleaning and stain removal while protecting fabric quality.",
     img: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=500&q=80",
     msg: "Hello Quality Laundry,\nI would like to order: Laundry Detergent\nPlease contact me with details."
   },
@@ -2626,7 +2532,7 @@ const products = [
     title: "Dryer Sheets",
     price: "5.99 QAR",
     desc: "Anti-static dryer sheets that reduce wrinkles, soften fabrics, and leave clothes smelling fresh.",
-    img: "https://images.unsplash.com/photo-1614535120568-15855cd5ac9d?w=500&q=80",
+    img: "https://i.postimg.cc/tCz9LrcM/5.jpg",
     msg: "Hello Quality Laundry,\nI would like to order: Dryer Sheets\nPlease contact me with details."
   },
   {
@@ -2649,51 +2555,20 @@ const galleryItems = [
   { src:"https://images.unsplash.com/photo-1505693314120-0d443867891c?w=600&q=80", label:"Curtain Cleaning" }
 ];
 
-/* ===== ARABIC PRODUCTS DATA ===== */
-const productsAr = [
-  { title:"مسحوق الغسيل",    price:"12.99 ريال", desc:"تركيبة مركّزة عالية الجودة — فعّالة في جميع درجات الحرارة، آمنة لجميع أنواع الأقمشة.", img:"https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: مسحوق الغسيل\nيرجى التواصل معي بالتفاصيل." },
-  { title:"منعّم الأقمشة",   price:"9.99 ريال",  desc:"نعومة طويلة الأمد وعطر منعش مع كل غسلة. تركيبة لطيفة مناسبة للبشرة الحساسة.",          img:"https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: منعّم الأقمشة\nيرجى التواصل معي بالتفاصيل." },
-  { title:"مزيل البقع",      price:"7.49 ريال",  desc:"جل مستهدف لمحاربة البقع الصعبة — الشحوم، النبيذ، الحبر وغيرها. يعمل فور التطبيق.",     img:"https://images.unsplash.com/photo-1563453392212-326f5e854473?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: مزيل البقع\nيرجى التواصل معي بالتفاصيل." },
-  { title:"أكياس الغسيل",    price:"14.99 ريال", desc:"أكياس غسيل شبكية متينة بأحجام متعددة — تحمي الملابس الحساسة وتُبقي الأغراض منظمة.",   img:"https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: أكياس الغسيل\nيرجى التواصل معي بالتفاصيل." },
-  { title:"معطّر الأقمشة",   price:"6.99 ريال",  desc:"بخاخ فوري لإزالة الروائح من الملابس والأرائك والمفروشات. يترك عطراً نظيفاً وخفيفاً.",  img:"https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: معطّر الأقمشة\nيرجى التواصل معي بالتفاصيل." },
-  { title:"طقم التنظيف",     price:"29.99 ريال", desc:"طقم غسيل منزلي كامل — مسحوق، منعّم، مزيل بقع ومعطّر في حزمة واحدة بقيمة رائعة.",     img:"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: طقم التنظيف\nيرجى التواصل معي بالتفاصيل." },
-  { title:"أوراق المجفف",    price:"5.99 ريال",  desc:"أوراق مجفف مضادة للكهرباء الساكنة تُقلّل التجعّد وتُليّن الأقمشة وتترك الملابس عطرة.", img:"https://images.unsplash.com/photo-1614535120568-15855cd5ac9d?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: أوراق المجفف\nيرجى التواصل معي بالتفاصيل." },
-  { title:"كواية بخار يدوية", price:"49.99 ريال", desc:"كواية بخار يدوية مدمجة للاستخدام المنزلي. تُزيل التجعّدات في دقائق على جميع أنواع الأقمشة.", img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80", msg:"مرحباً Quality Laundry،\nأرغب في طلب: كواية بخار يدوية\nيرجى التواصل معي بالتفاصيل." }
-];
-
-/* ===== ARABIC GALLERY LABELS ===== */
-const galleryLabelsAr = [
-  "منشأة غسيل حديثة",
-  "العناية بالملابس",
-  "عملية التنظيف الجاف",
-  "كوي احترافي",
-  "معالجة السجاد",
-  "مفروشات طازجة",
-  "خدمة التوصيل",
-  "تنظيف الستائر"
-];
-
 const testimonials = [
-  { name:"Sarah Mitchell", role:"Regular Customer", stars:5, avatar:"https://i.pravatar.cc/150?img=5", text:"Absolutely fantastic service! My suits came back perfectly pressed and the delivery was right on time. I won't use any other laundry service." },
-  { name:"James Okonkwo", role:"Business Owner", stars:5, avatar:"https://i.pravatar.cc/150?img=8", text:"Quality Laundry handles all our restaurant linens. Consistently excellent results, very professional staff, and pickup/delivery makes everything so easy." },
-  { name:"Amira Hassan", role:"Homeowner", stars:5, avatar:"https://i.pravatar.cc/150?img=47", text:"They cleaned my heavy curtains and carpets — the results were amazing. Looked brand new! Very careful with fabrics and super affordable pricing." },
-  { name:"David Chen", role:"Frequent User", stars:4, avatar:"https://i.pravatar.cc/150?img=12", text:"Great service overall. My shirts are always crisp and the turnaround time is fantastic. The app-free WhatsApp ordering makes it really convenient." },
-  { name:"Fatima Al-Rashid", role:"Loyal Client", stars:5, avatar:"https://i.pravatar.cc/150?img=49", text:"I've been a customer for 3 years and the quality never drops. They treat every item with such care. The stain removal on my daughter's dress was a miracle!" },
-  { name:"Michael Torres", role:"Hotel Manager", stars:5, avatar:"https://i.pravatar.cc/150?img=15", text:"We outsource all our hotel laundry to Quality Laundry. Impeccable standards, consistent quality, and they always meet tight deadlines. Highly recommend." }
+  { name:"Ahmed Hassan", role:"Regular Customer", stars:5, avatar:"https://i.pravatar.cc/150?img=5", text:"Excellent laundry service. My clothes always come back clean, fresh, and neatly folded. The pickup and delivery are always on time." },
+  { name:"Mariam Ali", role:"Working Professional", stars:5, avatar:"https://i.pravatar.cc/150?img=8", text:"Quality Laundry handles all our restaurant linens. Consistently excellent results, very professional staff, and pickup/delivery makes everything so easy." },
+  { name:"Omar Mahmoud", role:"Frequent User", stars:5, avatar:"https://i.pravatar.cc/150?img=47", text:"They cleaned my heavy curtains and carpets — the results were amazing. Looked brand new! Very careful with fabrics and super affordable pricing." },
+  { name:"Nour El-Din", role:"Frequent User", stars:4, avatar:"https://i.pravatar.cc/150?img=12", text:"Great service overall. My shirts are always crisp and the turnaround time is fantastic. The app-free WhatsApp ordering makes it really convenient." },
+  { name:"Yara Mostafa", role:"Frequent User", stars:5, avatar:"https://i.pravatar.cc/150?img=49", text:"I've been a customer for 3 years and the quality never drops. They treat every item with such care. The stain removal on my daughter's dress was a miracle!" },
+  { name:"Khaled Farouk", role:"Frequent User", stars:5, avatar:"https://i.pravatar.cc/150?img=15", text:"We outsource all our hotel laundry to Quality Laundry. Impeccable standards, consistent quality, and they always meet tight deadlines. Highly recommend." }
 ];
 
-/* ===== RENDER PRODUCTS (language-aware) ===== */
-function renderProducts(lang) {
-  const prdGrid = document.getElementById('products-grid');
-  if (!prdGrid) return;
-  const isAr = lang === 'ar';
-  const data = isAr ? productsAr : products;
-  const btnLabel = isAr ? 'أضف إلى السلة' : 'Add to Cart';
-  prdGrid.innerHTML = '';
-  data.forEach(p => {
-    const safeTitle = p.title.replace(/'/g, "\\'");
-    prdGrid.innerHTML += `
-  <div class="product-card reveal visible">
+/* ===== RENDER PRODUCTS ===== */
+const prdGrid = document.getElementById('products-grid');
+products.forEach(p => {
+  prdGrid.innerHTML += `
+  <div class="product-card reveal">
     <div class="product-img-wrap">
       <img src="${p.img}" alt="${p.title}" class="product-img" loading="lazy">
     </div>
@@ -2701,34 +2576,23 @@ function renderProducts(lang) {
       <div class="product-title">${p.title}</div>
       <div class="product-price">${p.price}</div>
       <p class="product-desc">${p.desc}</p>
-      <button onclick="addToCart('${safeTitle}', '${p.price}')" class="btn btn-wa" style="font-size:0.83rem;padding:11px 20px;width:100%;justify-content:center;border:none;cursor:pointer;">
-        ${btnLabel}
+      <button onclick="addToCart('${p.title}', '${p.price}')" class="btn btn-wa" style="font-size:0.83rem;padding:11px 20px;width:100%;justify-content:center;border:none;cursor:pointer;">
+        Add to Cart
       </button>
     </div>
   </div>`;
-  });
-}
+});
 
-/* ===== RENDER GALLERY (language-aware) ===== */
-function renderGallery(lang) {
-  const galGrid = document.getElementById('gallery-grid');
-  if (!galGrid) return;
-  const isAr = lang === 'ar';
-  galGrid.innerHTML = '';
-  galleryItems.forEach((g, i) => {
-    const label = isAr ? (galleryLabelsAr[i] || g.label) : g.label;
-    galGrid.innerHTML += `
-  <div class="gallery-item reveal visible" data-index="${i}" onclick="openLightbox(${i})">
-    <img src="${g.src}" alt="${label}" class="gallery-img" loading="lazy">
-    <div class="gallery-overlay"><div class="gallery-overlay-text">${label}</div></div>
+/* ===== RENDER GALLERY ===== */
+const galGrid = document.getElementById('gallery-grid');
+galleryItems.forEach((g, i) => {
+  galGrid.innerHTML += `
+  <div class="gallery-item reveal" data-index="${i}" onclick="openLightbox(${i})">
+    <img src="${g.src}" alt="${g.label}" class="gallery-img" loading="lazy">
+    <div class="gallery-overlay"><div class="gallery-overlay-text">${g.label}</div></div>
     <div class="gallery-zoom-icon">🔍</div>
   </div>`;
-  });
-}
-
-// Initial render (English default)
-renderProducts('en');
-renderGallery('en');
+});
 
 /* ===== RENDER TESTIMONIALS AS SLIDER — FULLY FIXED ===== */
 function getCardsPerSlide() {
@@ -2761,7 +2625,7 @@ function buildTestimonialSlider() {
         <div class="testimonial-stars">${'★'.repeat(t.stars)}${'☆'.repeat(5-t.stars)}</div>
         <p class="testimonial-text">"${t.text}"</p>
         <div class="testimonial-author">
-          <img src="${t.avatar}" alt="${t.name}" class="testimonial-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img loading="lazy" src="${t.avatar}" alt="${t.name}" class="testimonial-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="testimonial-avatar" style="display:none">${t.name.charAt(0)}</div>
           <div>
             <div class="testimonial-name">${t.name}</div>
@@ -2792,15 +2656,6 @@ function buildTestimonialSlider() {
 
   updateSlider();
   startAutoplay();
-  // Re-apply LTR protection if page is in RTL mode
-  if (document.documentElement.lang === 'ar') {
-    const wrap = document.querySelector('.testimonials-slider-wrap');
-    if (wrap) wrap.style.direction = 'ltr';
-    const clip = document.querySelector('.testimonials-slider-clip');
-    if (clip) clip.style.direction = 'ltr';
-    const trk = document.getElementById('testimonials-track');
-    if (trk) trk.style.direction = 'ltr';
-  }
 }
 
 function updateSlider() {
@@ -2865,38 +2720,19 @@ document.getElementById('tsl-next').addEventListener('click', () => {
   });
 })();
 
-// Rebuild on resize with debounce — only if layout breakpoint actually changes
-let _lastCardsPerSlide = 0;
+// Rebuild on resize with debounce
 let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => {
-    const newCps = getCardsPerSlide();
-    if (newCps !== _lastCardsPerSlide) {
-      _lastCardsPerSlide = newCps;
-      buildTestimonialSlider();
-    }
-  }, 250);
+  resizeTimer = setTimeout(buildTestimonialSlider, 250);
 });
 
-_lastCardsPerSlide = getCardsPerSlide();
 buildTestimonialSlider();
 
 /* ===== WHATSAPP LINKS ===== */
-function updateWaLinks() {
-  const isAr = currentLang === 'ar';
-  const heroMsg = isAr
-    ? "مرحباً Quality Laundry،\nأود معرفة المزيد عن خدماتكم.\nيرجى التواصل معي."
-    : "Hello Quality Laundry,\nI'd like to learn more about your services.\nPlease contact me.";
-  const footerMsg = isAr
-    ? "مرحباً Quality Laundry،\nأود التواصل معكم.\nيرجى التواصل معي."
-    : "Hello Quality Laundry,\nI'd like to get in touch.\nPlease contact me.";
-  const heroBtn = document.getElementById('hero-wa-btn');
-  if (heroBtn) heroBtn.href = waLink(heroMsg);
-  const footerWa = document.getElementById('footer-wa');
-  if (footerWa) footerWa.href = waLink(footerMsg);
-}
-updateWaLinks();
+document.getElementById('hero-wa-btn').href = waLink("Hello Quality Laundry,\nI'd like to learn more about your services.\nPlease contact me.");
+const footerWa = document.getElementById('footer-wa');
+if (footerWa) footerWa.href = waLink("Hello Quality Laundry,\nI'd like to get in touch.\nPlease contact me.");
 
 /* ===== LIGHTBOX ===== */
 let currentImg = 0;
@@ -2938,13 +2774,8 @@ function submitForm() {
   const phone = document.getElementById('form-phone').value.trim();
   const service = document.getElementById('form-service').value;
   const msg = document.getElementById('form-message').value.trim();
-  if(!name || !phone) { alert(currentLang === 'ar' ? 'يرجى إدخال اسمك ورقم هاتفك.' : 'Please fill in your name and phone number.'); return; }
-  let waMsg;
-  if (currentLang === 'ar') {
-    waMsg = `مرحباً Quality Laundry،\n\nطلب خدمة جديد:\n━━━━━━━━━━━━━━━━━━\nالاسم: ${name}\nالهاتف: ${phone}\nالخدمة: ${service || 'غير محدد'}\nالرسالة: ${msg || 'لا توجد رسالة'}\n━━━━━━━━━━━━━━━━━━\nيرجى التواصل معي في أقرب وقت ممكن.`;
-  } else {
-    waMsg = `Hello Quality Laundry,\n\nNew Service Request:\n━━━━━━━━━━━━━━━━━━\nName: ${name}\nPhone: ${phone}\nService: ${service || 'Not specified'}\nMessage: ${msg || 'No message'}\n━━━━━━━━━━━━━━━━━━\nPlease contact me at your earliest convenience.`;
-  }
+  if(!name || !phone) { alert('Please fill in your name and phone number.'); return; }
+  const waMsg = `Hello Quality Laundry,\n\nNew Service Request:\n━━━━━━━━━━━━━━━━━━\nName: ${name}\nPhone: ${phone}\nService: ${service || 'Not specified'}\nMessage: ${msg || 'No message'}\n━━━━━━━━━━━━━━━━━━\nPlease contact me at your earliest convenience.`;
   window.open(waLink(waMsg), '_blank');
 }
 
@@ -3025,24 +2856,13 @@ function hideLoader() {
   }
 }
 
-// Hide loader after DOM is ready
+// Hide loader after DOM is ready (don't wait for images)
 document.addEventListener('DOMContentLoaded', () => {
-  // Update loader text if Arabic is saved
-  const savedLang = localStorage.getItem('qlLang');
-  if (savedLang === 'ar') {
-    const loaderText = document.querySelector('.loader-text');
-    if (loaderText) loaderText.textContent = 'جودة لاندري';
-  }
-  setTimeout(hideLoader, 800);
+  setTimeout(hideLoader, 1200);
 });
 
-// Absolute fallback: force hide after 2.5 seconds no matter what
-setTimeout(hideLoader, 2500);
-
-// HTML escape helper to prevent XSS
-function escapeHTML(str) {
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+// Fallback: force hide after 3 seconds no matter what
+setTimeout(hideLoader, 3000);
 
 /* ===== SHOPPING CART SYSTEM ===== */
 let cartItems = [];
@@ -3051,10 +2871,7 @@ let cartItems = [];
 function loadCart() {
   const saved = localStorage.getItem('qualityLaundryCart');
   if(saved) {
-    try {
-      const parsed = JSON.parse(saved);
-      cartItems = Array.isArray(parsed) ? parsed : [];
-    } catch(e) { cartItems = []; }
+    cartItems = JSON.parse(saved);
     updateCartUI();
   }
 }
@@ -3076,15 +2893,7 @@ function addToCart(itemName, itemPrice) {
   showCartNotification();
 }
 
-// Add featured offer to cart — language-aware via data attributes
-function addFeaturedOfferToCartLang(btn) {
-  const isAr = currentLang === 'ar';
-  const name  = isAr ? btn.getAttribute('data-ar-name')  : btn.getAttribute('data-en-name');
-  const price = isAr ? btn.getAttribute('data-ar-price') : btn.getAttribute('data-en-price');
-  addToCart(name, price);
-}
-
-// Legacy wrapper kept for safety
+// Add featured offer to cart
 function addFeaturedOfferToCart(itemName, itemPrice) {
   addToCart(itemName, itemPrice);
 }
@@ -3130,74 +2939,15 @@ function renderCartItems() {
     cartList.innerHTML = cartItems.map(item => `
       <div class="cart-item">
         <div class="cart-item-info">
-          <div class="cart-item-name">${escapeHTML(item.name)}</div>
-          <div class="cart-item-price">${escapeHTML(item.price)}</div>
+          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-price">${item.price}</div>
         </div>
-        <button class="cart-item-remove" onclick="removeFromCart(${item.id})">${cartStrings[currentLang].removeBtn}</button>
+        <button class="cart-item-remove" onclick="removeFromCart(${item.id})">Remove</button>
       </div>
     `).join('');
     
     updateCartSummary();
   }
-}
-
-/* ===== CART LANGUAGE APPLY ===== */
-function applyCartLanguage(lang) {
-  const s = cartStrings[lang] || cartStrings.en;
-  const isAr = lang === 'ar';
-  const dir = isAr ? 'rtl' : 'ltr';
-  const font = isAr ? "'Cairo', system-ui, sans-serif" : '';
-
-  // Modal title
-  const title = document.getElementById('cart-modal-title');
-  if (title) title.textContent = s.title;
-
-  // Labels
-  const lName = document.getElementById('cart-label-name');
-  if (lName) lName.textContent = s.labelName;
-  const lPhone = document.getElementById('cart-label-phone');
-  if (lPhone) lPhone.textContent = s.labelPhone;
-  const lArea = document.getElementById('cart-label-area');
-  if (lArea) lArea.textContent = s.labelArea;
-
-  // Placeholders
-  const iName = document.getElementById('cart-name');
-  if (iName) iName.placeholder = s.placeholderName;
-  const iPhone = document.getElementById('cart-phone');
-  if (iPhone) iPhone.placeholder = s.placeholderPhone;
-  const iArea = document.getElementById('cart-area');
-  if (iArea) iArea.placeholder = s.placeholderArea;
-
-  // Summary labels
-  const lSub = document.getElementById('cart-label-subtotal');
-  if (lSub) lSub.textContent = s.subtotal;
-  const lTot = document.getElementById('cart-label-total');
-  if (lTot) lTot.textContent = s.total;
-
-  // Checkout button
-  const btnText = document.getElementById('checkout-btn-text');
-  if (btnText) btnText.textContent = s.checkoutBtn;
-
-  // Empty state
-  const emptyT = document.getElementById('cart-empty-text');
-  if (emptyT) emptyT.textContent = s.emptyText;
-  const emptySub = document.getElementById('cart-empty-subtext');
-  if (emptySub) emptySub.textContent = s.emptySubtext;
-
-  // RTL for cart modal
-  const modal = document.getElementById('cart-modal');
-  if (modal) {
-    modal.style.direction = dir;
-    modal.style.fontFamily = font;
-  }
-
-  // Re-render remove buttons on existing cart items with correct label
-  document.querySelectorAll('.cart-item-remove').forEach(btn => {
-    btn.textContent = s.removeBtn;
-  });
-
-  // Refresh dynamic status text if visible
-  updateCartSummary();
 }
 
 // Update cart summary
@@ -3227,13 +2977,13 @@ function updateCartSummary() {
     
     if (total < MIN_ORDER) {
       notice.classList.add('show');
-      notice.textContent = cartStrings[currentLang].minNotice;
-      statusText.textContent = cartStrings[currentLang].addMore(remaining.toFixed(2));
+      notice.textContent = 'Minimum order value is 50 QAR. Please add more items to continue.';
+      statusText.textContent = 'Add ' + remaining.toFixed(2) + ' QAR more to place your order.';
       statusText.style.color = '#dc3545';
       if (checkoutBtn) checkoutBtn.classList.add('checkout-disabled');
     } else {
       notice.classList.remove('show');
-      statusText.textContent = cartStrings[currentLang].readyMsg;
+      statusText.textContent = 'Your order is ready for checkout!';
       statusText.style.color = '#28a745';
       if (checkoutBtn) checkoutBtn.classList.remove('checkout-disabled');
     }
@@ -3259,12 +3009,12 @@ function checkoutViaWhatsApp() {
   const area = document.getElementById('cart-area').value.trim();
   
   if(!name || !phone || !area) {
-    alert(cartStrings[currentLang].alertFields);
+    alert('Please fill in all required fields: Name, Phone, and Area');
     return;
   }
   
   if(cartItems.length === 0) {
-    alert(cartStrings[currentLang].alertEmpty);
+    alert('Your cart is empty. Please add items before checkout.');
     return;
   }
   
@@ -3277,22 +3027,20 @@ function checkoutViaWhatsApp() {
   });
   
   if(total < 50) {
-    alert(cartStrings[currentLang].alertMin(total.toFixed(2)));
+    alert('Minimum order value is 50 QAR. Your current total is ' + total.toFixed(2) + ' QAR. Please add more items to continue.');
     return;
   }
   
-  // Build order message — fully language-aware, no double-counting
+  // Build order message
   let itemsList = '';
   cartItems.forEach((item, index) => {
     itemsList += `${index + 1}. ${item.name} - ${item.price}\n`;
+    const priceStr = item.price.replace(/[^0-9.]/g, '');
+    const price = parseFloat(priceStr) || 0;
+    total += price;
   });
   
-  let orderMessage;
-  if (currentLang === 'ar') {
-    orderMessage = `طلب جديد\n\nاسم العميل: ${name}\nالهاتف: ${phone}\nالمنطقة: ${area}\n\nالعناصر المختارة:\n${itemsList}\nالإجمالي: ${total.toFixed(2)} ريال\n\nيرجى تأكيد هذا الطلب.`;
-  } else {
-    orderMessage = `New Order\n\nCustomer Name: ${name}\nPhone: ${phone}\nArea: ${area}\n\nSelected Items:\n${itemsList}\nTotal: ${total.toFixed(2)} QAR\n\nPlease confirm this order.`;
-  }
+  const orderMessage = `New Order\n\nCustomer Name: ${name}\nPhone: ${phone}\nArea: ${area}\n\nSelected Items:\n${itemsList}\nTotal: ${total.toFixed(2)} QAR\n\nPlease confirm this order.`;
   
   const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderMessage)}`;
   window.open(waLink, '_blank');
@@ -3308,19 +3056,10 @@ function checkoutViaWhatsApp() {
   }, 500);
 }
 
-// Show cart notification toast
+// Show cart notification
 function showCartNotification() {
-  let toast = document.getElementById('cart-toast');
-  if (!toast) {
-    toast = document.createElement('div');
-    toast.id = 'cart-toast';
-    toast.style.cssText = 'position:fixed;bottom:90px;right:24px;z-index:9998;background:#0C4D67;color:#fff;padding:10px 20px;border-radius:50px;font-size:0.85rem;font-weight:600;box-shadow:0 4px 20px rgba(0,0,0,0.2);opacity:0;transition:opacity 0.3s ease;pointer-events:none;';
-    document.body.appendChild(toast);
-  }
-  toast.textContent = currentLang === 'ar' ? '✓ تمت الإضافة إلى السلة' : '✓ Added to cart';
-  toast.style.opacity = '1';
-  clearTimeout(toast._timer);
-  toast._timer = setTimeout(() => { toast.style.opacity = '0'; }, 2000);
+  // You can add a toast notification here if desired
+  console.log('Item added to cart');
 }
 
 // Close cart modal when clicking outside
@@ -3336,776 +3075,12 @@ document.addEventListener('DOMContentLoaded', () => {
   loadCart();
 });
 
-
-/* ===== LANGUAGE SWITCHER ===== */
-const translations = {
-  ar: {
-    /* ---- Hero ---- */
-    'hero-label-text': 'موثوق به من قِبَل أكثر من 2,000 عميل سعيد',
-    'hero-title': 'خدمات غسيل<br><em>ملابس وتنظيف</em><br>جاف احترافية',
-    'hero-desc': 'نعتني بملابسك بعناية فائقة — استلام وتوصيل سريع، تنظيف متميز، وأسعار معقولة ستحبها.',
-    'hero-btn-services': 'تصفح الخدمات ←',
-    'hero-btn-wa': 'تواصل عبر واتساب',
-    'hero-feat-1': 'استلام وتوصيل مجاني',
-    'hero-feat-2': 'منتجات صديقة للبيئة',
-    'hero-feat-3': 'خدمة في نفس اليوم',
-    'hero-feat-4': 'جودة ممتازة',
-    'hero-badge-1': 'طلبك جاهز في 24 ساعة',
-    'hero-badge-2': 'توصيل مجاني',
-    'hero-stat-clients': 'عميل سعيد',
-    'hero-stat-rating': 'متوسط التقييم',
-    'hero-stat-delivery': 'توصيل سريع',
-    /* ---- About ---- */
-    'about-label': 'من نحن',
-    'about-title': 'أنظف الملابس<br>تبدأ من هنا',
-    'about-sub': 'تخدم Quality Laundry مجتمعنا بخدمات تنظيف احترافية. نجمع بين التكنولوجيا الحديثة والمنتجات الصديقة للبيئة لنقدم نتائج نظيفة تمامًا في كل مرة.',
-    'feat-fast-title': 'خدمة سريعة',
-    'feat-fast-desc': 'خيارات الخدمة في نفس اليوم وخلال 24 ساعة متاحة لجميع الخدمات.',
-    'feat-pickup-title': 'استلام وتوصيل',
-    'feat-pickup-desc': 'استلام وتوصيل مجاني من الباب إلى الباب داخل منطقة خدمتنا.',
-    'feat-premium-title': 'تنظيف متميز',
-    'feat-premium-desc': 'منتجات احترافية لطيفة على الأقمشة وفعّالة ضد البقع.',
-    'feat-affordable-title': 'أسعار معقولة',
-    'feat-affordable-desc': 'أسعار تنافسية بدون رسوم خفية. جودة في متناول الجميع.',
-    /* ---- Products section ---- */
-    'prd-section-label': 'متجرنا',
-    'prd-section-title': 'منتجات الغسيل',
-    'prd-section-sub': 'منتجات غسيل احترافية متاحة للتوصيل المنزلي — اطلب مباشرة عبر واتساب.',
-    /* ---- Gallery section ---- */
-    'gal-section-label': 'أعمالنا',
-    'gal-section-title': 'شاهد الفرق',
-    'gal-section-sub': 'لمحة من داخل منشأتنا والنتائج التي نقدمها لكل عميل.',
-    /* ---- Services section header ---- */
-    'svc-section-label': 'ما نقدمه',
-    'svc-section-title': 'خدماتنا',
-    'svc-section-sub': 'من الملابس اليومية إلى الأقمشة الحساسة — نتولى العناية بها جميعاً بدقة واهتمام.',
-    /* ---- Featured offers ---- */
-    'offer1-badge': '⚡ محدود',
-    'offer1-title': 'كيس غسيل العائلة',
-    'offer1-price': 'غسيل وكوي - 99 ريال',
-    'offer1-desc': 'مثالي للعائلات! احصل على خدمة غسيل وكوي كاملة لجميع ملابس المنزل بسعر لا يُقاوم. مثالي للاحتياجات الأسبوعية.',
-    'offer1-btn': 'أضف إلى السلة',
-    'offer2-badge': '🚀 الأكثر طلباً',
-    'offer2-title': 'باقة التنظيف السريع',
-    'offer2-price': 'خدمة شاملة - 149 ريال',
-    'offer2-desc': 'أنجز كل شيء بسرعة! تشمل الغسيل والتنظيف الجاف والكوي والتوصيل السريع. مثالية للمشغولين الذين يريدون جودة عالية.',
-    'offer2-btn': 'أضف إلى السلة',
-    /* ---- Category tabs ---- */
-    'tab-everyday': '👕 الملابس اليومية',
-    'tab-suits': '🥼 البدلات والرسمي',
-    'tab-women': '👗 ملابس نسائية',
-    'tab-bedding': '🛏️ المفروشات والمنزل',
-    'tab-curtains': '🪟 الستائر والأثاث',
-    'tab-carpet': '🏠 تنظيف السجاد',
-    'tab-shoes': '👟 تنظيف الأحذية',
-    'tab-express': '⚡ الخدمة السريعة',
-    /* ---- Category headers ---- */
-    'cat-everyday-name': 'الملابس اليومية',
-    'cat-everyday-sub': 'الثوب، القميص، البنطلون، وجميع ملابس الاستخدام اليومي',
-    'cat-everyday-price': '✦ يبدأ من 3 ريال',
-    'cat-suits-name': 'البدلات والملابس الرسمية',
-    'cat-suits-sub': 'تنظيف جاف احترافي للملابس الرسمية للرجال',
-    'cat-suits-price': '✦ يبدأ من 6 ريال',
-    'cat-women-name': 'الملابس النسائية',
-    'cat-women-sub': 'الفساتين، العباءات، الحجاب، وملابس السيدات',
-    'cat-women-price': '✦ يبدأ من 3 ريال',
-    'cat-bedding-name': 'المفروشات والمنزل',
-    'cat-bedding-sub': 'الملاءات، البطاطين، المناشف، والمفروشات',
-    'cat-bedding-price': '✦ يبدأ من 2 ريال',
-    'cat-curtains-name': 'الستائر والأثاث',
-    'cat-curtains-sub': 'الستائر وأغطية الكنب — جميع الأحجام',
-    'cat-curtains-price': '✦ يبدأ من 3 ريال',
-    'cat-carpet-name': 'تنظيف السجاد',
-    'cat-carpet-sub': 'تنظيف عميق للسجاد باستخدام معدات احترافية',
-    'cat-carpet-price': '✦ 10 ريال / م²',
-    'cat-shoes-name': 'تنظيف الأحذية',
-    'cat-shoes-sub': 'عناية واهتمام متميز بجميع أنواع الأحذية',
-    'cat-shoes-price': '✦ 20 ريال للزوج',
-    'cat-express-name': 'خدمات الغسيل السريع',
-    'cat-express-sub': 'تسليم عاجل في نفس اليوم — سريع وموثوق',
-    'cat-express-price': '⚡ خدمة سريعة',
-    /* ---- Features strip ---- */
-    'strip-dry': 'تنظيف جاف احترافي',
-    'strip-wash': 'غسيل وكوي',
-    'strip-express': 'خدمة سريعة',
-    'strip-carpet': 'تنظيف سجاد',
-    'strip-curtain': 'تنظيف ستائر',
-    'strip-sofa': 'تنظيف أغطية كنب',
-    'strip-shoes': 'تنظيف أحذية',
-    'strip-household': 'غسيل المفروشات',
-    /* ---- Add to Cart / Order buttons ---- */
-    'add-to-cart': 'أضف إلى السلة',
-    'express-tag': 'سريع',
-    /* ---- Testimonials (Reviews) ---- */
-    'tst-label': 'قصص عملائنا',
-    'tst-title': 'ماذا يقول الناس',
-    'tst-sub': 'تقييمات حقيقية من عملائنا السعداء الذين يثقون بنا في العناية بملابسهم.',
-    /* ---- Contact ---- */
-    'contact-label': 'تواصل معنا',
-    'contact-title': 'اتصل بنا',
-    'contact-sub': 'هل أنت مستعد لتجربة العناية الفائقة بالغسيل؟ تواصل معنا وسنرد عليك فوراً.',
-    'contact-lbl-phone': 'رقم الهاتف',
-    'contact-lbl-whatsapp': 'واتساب',
-    'contact-lbl-email': 'البريد الإلكتروني',
-    'contact-lbl-address': 'عنواننا',
-    'contact-val-address': 'أم قرن - شارع 260 - مبنى 81 - محل 4 - الدوحة - قطر',
-    'contact-lbl-hours': 'ساعات العمل',
-    'contact-val-hours': 'مفتوح 24 ساعة طوال الأسبوع',
-    'contact-form-name': 'الاسم الكامل *',
-    'contact-form-name-ph': 'اسمك الكامل',
-    'contact-form-phone': 'رقم الهاتف *',
-    'contact-form-phone-ph': 'رقم هاتفك',
-    'contact-form-service': 'الخدمة المطلوبة',
-    'contact-form-service-ph': 'اختر خدمة...',
-    'contact-form-opt1': 'غسيل الملابس',
-    'contact-form-opt2': 'التنظيف الجاف',
-    'contact-form-opt3': 'خدمة الكوي',
-    'contact-form-opt4': 'تنظيف السجاد',
-    'contact-form-opt5': 'تنظيف الستائر',
-    'contact-form-opt6': 'تنظيف المفروشات والبطاطين',
-    'contact-form-message': 'الرسالة',
-    'contact-form-msg-ph': 'أخبرنا عن احتياجات الغسيل الخاصة بك...',
-    'contact-form-btn': 'إرسال عبر واتساب',
-    /* ---- Footer ---- */
-    'footer-tagline': 'خدمات تنظيف احترافية تُقدَّم باهتمام وسرعة وابتسامة.',
-    'footer-col-links': 'روابط سريعة',
-    'footer-link-about': 'من نحن',
-    'footer-link-services': 'الخدمات',
-    'footer-link-products': 'المنتجات',
-    'footer-link-gallery': 'المعرض',
-    'footer-col-services': 'الخدمات',
-    'footer-svc-1': 'غسيل الملابس',
-    'footer-svc-2': 'التنظيف الجاف',
-    'footer-svc-3': 'خدمة الكوي',
-    'footer-svc-4': 'تنظيف السجاد',
-    'footer-col-contact': 'التواصل',
-    'footer-link-address': 'أم قرن - شارع 260 - الدوحة',
-    'footer-link-reviews': 'التقييمات',
-    'footer-copy-rights': 'جميع الحقوق محفوظة.',
-    'footer-copy-crafted': 'صُنع بـ ❤️ لملابس نظيفة في كل مكان',
+// Keyboard shortcut to close cart (Escape key)
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape') {
+    closeCart();
   }
-};
-
-/* ===== ARABIC SERVICE DATA ===== */
-const serviceCategoriesAr = [
-  {
-    id: 'everyday',
-    items: [
-      { name: 'ثوب',              icon: '👘', price: '7 ريال',  desc: 'غسيل وكوي احترافي للثوب الأبيض الكلاسيكي. تشطيب ناصع مع طي دقيق بدون تجعد.' },
-      { name: 'ثوب ملون',         icon: '🎨', price: '8 ريال',  desc: 'غسيل آمن للألوان لجميع ألوان الثوب. يحافظ على اللون مع كل غسيل احترافي.' },
-      { name: 'غترة',             icon: '🧣', price: '5 ريال',  desc: 'تنظيف دقيق وكوي حاد للغترة البيضاء التقليدية للحصول على مظهر أنيق.' },
-      { name: 'غترة ملونة',       icon: '🌈', price: '6 ريال',  desc: 'عناية لطيفة بالقماش للغترات المزخرفة والملونة. يحافظ على الملمس الأصلي.' },
-      { name: 'بنطلون',           icon: '👖', price: '6 ريال',  desc: 'غسيل وكوي احترافي لجميع أنواع البنطلونات. حواف حادة وتشطيب راقٍ.' },
-      { name: 'قميص',             icon: '👔', price: '5 ريال',  desc: 'تنظيف شامل وكوي حاد للقمصان الرسمية والكاجوال. عناية خاصة بالياقة والأكمام.' },
-      { name: 'تيشيرت',          icon: '👕', price: '3 ريال',  desc: 'غسيل طازج بمنظفات آمنة للألوان لجميع أقمشة التيشيرت. تجفيف مسطح للحفاظ على الشكل.' },
-      { name: 'فانيلة داخلية',   icon: '🩱', price: '3 ريال',  desc: 'تنظيف عميق صحي للفانيلات الداخلية باستخدام منتجات آمنة جلدياً. ناعمة وخالية من الروائح.' },
-      { name: 'سروال / بنطلون فضفاض', icon: '🪡', price: '5 ريال', desc: 'غسيل وكوي عناية للسروال والبنطلون الفضفاض. يحافظ على الشكل طوال العملية.' },
-      { name: 'جلابية',           icon: '✨', price: '8 ريال',  desc: 'تنظيف مناسب لقماش الجلابية التقليدية. عناية لطيفة بالتطريز الدقيق.' },
-      { name: 'أوفرول',           icon: '🦺', price: '10 ريال', desc: 'تنظيف قوي للأوفرول وملابس العمل. يزيل الشحوم والغبار والبقع الصناعية.' },
-      { name: 'شورت',             icon: '🩳', price: '3 ريال',  desc: 'غسيل وكوي سريع للشورت من جميع الأقمشة. يُعاد جاهزاً للارتداء.' },
-      { name: 'هودي',             icon: '🧤', price: '8 ريال',  desc: 'غسيل لطيف بالآلة للهودي والسويت شيرت. معالجة لتثبيت اللون والطباعة.' },
-      { name: 'صدرية',            icon: '🎽', price: '4 ريال',  desc: 'غسيل سريع وتجفيف مسطح للصدريات. تعود طازجة وبدون تجعد.' },
-      { name: 'بولو شيرت',        icon: '👕', price: '5 ريال',  desc: 'غسيل احترافي وكوي خفيف للبولو شيرت. الياقة مشكّلة واللون محفوظ.' },
-      { name: 'جينز',             icon: '👖', price: '7 ريال',  desc: 'غسيل جينز آمن للألوان يزيل البقع بدون بهتان. يعود ناعماً ونظيفاً مع الحفاظ على الشكل.' },
-      { name: 'ملابس رياضية',    icon: '🏃', price: '5 ريال',  desc: 'غسيل آمن لأقمشة الأداء الرياضي. معالجة لإزالة الروائح مضمّنة.' },
-      { name: 'طقم بيجاما',       icon: '😴', price: '8 ريال',  desc: 'غسيل لطيف للبيجاما وملابس النوم. تشطيب ناعم بمنظفات آمنة للبشرة.' },
-      { name: 'كندورة أطفال',     icon: '👦', price: '4 ريال',  desc: 'غسيل عناية لكندورات الأطفال. تشطيب أبيض ناصع بمنتجات هيبوألرجينية آمنة للأطفال.' },
-      { name: 'يونيفورم مدرسي',  icon: '🏫', price: '5 ريال',  desc: 'غسيل وكوي شامل لليونيفورم المدرسي. أنيق ومرتب وجاهز لليوم الدراسي التالي.' },
-      { name: 'معطف مختبر',       icon: '🥼', price: '8 ريال',  desc: 'غسيل حراري صحي لمعاطف المختبر والطب. إزالة البقع وعلاج التعقيم.' },
-      { name: 'يونيفورم شيف',    icon: '👨‍🍳', price: '10 ريال', desc: 'تنظيف قوي ليونيفورم الطهاة. إزالة الشحوم وبقع الطعام بنتائج احترافية.' },
-      { name: 'يونيفورم أمن',    icon: '🛡️', price: '10 ريال', desc: 'تنظيف احترافي لليونيفورم الأمني والمؤسسي. كوي حاد مع عناية بمواضع الشارات.' },
-      { name: 'سويتر',            icon: '🧶', price: '8 ريال',  desc: 'غسيل بارد لطيف للسويترات الصوفية والمحاكة. تجفيف مسطح لمنع التمدد.' },
-      { name: 'بدلة رياضية',     icon: '🏅', price: '10 ريال', desc: 'غسيل كامل لبدل الرياضة والملابس الأثلتيكية. عناية بالمطاط وأشرطة الشد.' },
-      { name: 'طقم ملابس أطفال', icon: '🧸', price: '6 ريال',  desc: 'غسيل آمن وشامل لطقم ملابس الأطفال الكامل. منتجات هيبوألرجينية، نتائج ناعمة وطازجة.' }
-    ],
-    express: false
-  },
-  {
-    id: 'suits',
-    items: [
-      { name: 'بدلة رجالي',      icon: '🤵', price: '35 ريال', desc: 'تنظيف جاف كامل للبدل ثنائية وثلاثية الأزرار. كوي بالبخار مع عناية دقيقة بالتلابيب والخياطة.' },
-      { name: 'بدلة عسكرية',    icon: '🎖️', price: '40 ريال', desc: 'تنظيف متخصص للزي العسكري والرسمي. الأوسمة والشارات تُعالج بدقة.' },
-      { name: 'معطف ثقيل',       icon: '🧥', price: '30 ريال', desc: 'تنظيف عميق وكوي بالبخار للمعاطف الثقيلة والشتوية. استعادة كاملة للشكل بدون انكماش.' },
-      { name: 'جاكيت',           icon: '🧥', price: '15 ريال', desc: 'تنظيف جاف أو غسيل احترافي لجميع أنواع الجاكيتات. بطانة تُعالج بعناية والشكل يُستعاد كاملاً.' },
-      { name: 'معطف مطر',        icon: '🌧️', price: '12 ريال', desc: 'تنظيف متخصص للمعاطف المقاومة للماء. تُحافظ على خاصية طرد الماء بعد الغسيل.' },
-      { name: 'ربطة عنق',        icon: '🪢', price: '5 ريال',  desc: 'تنظيف جاف متخصص لربطات العنق الحريرية والصناعية. معالجة البقع وكوي لتشطيب كالجديد.' },
-      { name: 'شال',              icon: '🧣', price: '8 ريال',  desc: 'غسيل لطيف لشالات الأوشحة والملافع. يحافظ على النعومة والملمس وتفاصيل الهدب.' },
-      { name: 'فستان خاص',       icon: '✨', price: '50 ريال', desc: 'تنظيف فاخر للفساتين المزخرفة وفساتين المناسبات. حجارة الزينة والأقمشة الحساسة تُعالج بأقصى عناية.' }
-    ],
-    express: false
-  },
-  {
-    id: 'women',
-    items: [
-      { name: 'فستان سيدات',     icon: '👗', price: '15 ريال', desc: 'عناية لطيفة بالقماش لفساتين السيدات اليومية وشبه الرسمية. الألوان محمية والقصة محافظ عليها.' },
-      { name: 'عباءة وطقم حجاب', icon: '🧕', price: '18 ريال', desc: 'تنظيف مشترك للعباءة الكاملة وطقم الحجاب المطابق. يُسلَّم طازجاً ومكوياً ومعبأً بعناية.' },
-      { name: 'عباءة',           icon: '🌙', price: '12 ريال', desc: 'تنظيف جاف متخصص للعباءات من جميع أنواع الأقمشة. التطريز والأحجار تُحافظ عليها بمعالجة خاصة.' },
-      { name: 'حجاب',            icon: '🧕', price: '5 ريال',  desc: 'غسيل لطيف لجميع أقمشة الحجاب بما في ذلك الشيفون والجيرسي والكتان. يعود ناعماً وطازجاً.' },
-      { name: 'بلوزة',           icon: '👚', price: '7 ريال',  desc: 'غسيل وكوي عناية للبلوزات النسائية. الدانتيل والأزرار والأقمشة الشفافة تأخذ اهتماماً فردياً.' },
-      { name: 'حمالة صدر',       icon: '🩱', price: '5 ريال',  desc: 'غسيل يدوي صحي للملابس الداخلية الحساسة بمنظفات لطيفة آمنة للبشرة. الشكل والمرونة محفوظان.' }
-    ],
-    express: false
-  },
-  {
-    id: 'bedding',
-    items: [
-      { name: 'بطانية مزدوجة', icon: '🌙', price: '25 ريال', desc: 'تنظيف عميق للبطاطين المزدوجة الكبيرة. غسيل قوي يزيل العث والروائح والبقع العميقة.' },
-      { name: 'بطانية فردية',   icon: '🌙', price: '15 ريال', desc: 'تنظيف احترافي للبطاطين الفردية. تشطيب رقيق مع شطف خالٍ من البقايا ومنعم آمن للقماش.' },
-      { name: 'ملاءة سرير',     icon: '🛏️', price: '10 ريال', desc: 'غسيل بحرارة عالية للملاءات للقضاء على مسببات الحساسية والبكتيريا. تُعاد مكوية وطازجة ومطوية بعناية.' },
-      { name: 'غطاء وسادة',    icon: '😴', price: '4 ريال',  desc: 'غسيل صحي شامل لأغطية الوسائد بجميع الأحجام. معالجة بالمنعم تتركها طازجة وناعمة.' },
-      { name: 'منشفة',          icon: '🏖️', price: '5 ريال',  desc: 'غسيل ساخن صحي لجميع المناشف. معالجة مضادة للبكتيريا تزيل التراكمات مع الإبقاء على ليونة الألياف.' },
-      { name: 'منشفة حمام',     icon: '🛁', price: '7 ريال',  desc: 'خدمة تنظيف عميق لمناشف الحمام الكبيرة. غسيل معزز للنضارة يستعيد الامتصاصية ويزيل الروائح.' },
-      { name: 'منشفة وجه',      icon: '🧼', price: '3 ريال',  desc: 'تنظيف لطيف وفعّال لمناشف الوجه والأيدي بمنظفات هيبوألرجينية آمنة للبشرة.' },
-      { name: 'روب حمام',       icon: '🛁', price: '15 ريال', desc: 'غسيل فاخر لأردية الحمام القطنية والتيري. الامتصاصية والنعومة تُستعادان كاملاً بعد كل تنظيف.' },
-      { name: 'كيس توفير',      icon: '🛍️', price: '45 ريال', desc: 'باقة اقتصادية — املأ الكيس بقطع ملابس مختلطة واستمتع بغسيل فعّال من حيث التكلفة بسعر ثابت.' }
-    ],
-    express: false
-  },
-  {
-    id: 'curtains',
-    items: [
-      { name: 'ستارة صغيرة',    icon: '🪟', price: '20 ريال', desc: 'غسيل احترافي وكوي بالبخار للستائر الصغيرة. الطيات والخطافات تُدار بعناية طوال العملية.' },
-      { name: 'ستارة كبيرة',    icon: '🏠', price: '40 ريال', desc: 'خدمة تنظيف كاملة للستائر الثقيلة الممتدة من الأرض للسقف. مُعالجة ومكوية وجاهزة لإعادة التعليق.' },
-      { name: 'غطاء كنب كبير',  icon: '🛋️', price: '35 ريال', desc: 'خدمة تنظيف عميق لأغطية الكنب والأثاث الكبيرة. معالجة البقع والعناية بالقماش مضمّنة.' },
-      { name: 'غطاء كنب صغير',  icon: '🪑', price: '20 ريال', desc: 'تنظيف لطيف وشامل لأغطية المقاعد الفردية والكنب الصغير. الشكل واللون يُستعادان كاملاً.' }
-    ],
-    express: false
-  },
-  {
-    id: 'carpet',
-    items: [
-      { name: 'سجادة', icon: '🏠', price: '10 ريال/م²', desc: 'تنظيف عميق صناعي لجميع أنواع السجاد. استخراج بضغط عالٍ يزيل الغبار ومسببات الحساسية والبقع العميقة.' }
-    ],
-    express: false
-  },
-  {
-    id: 'shoes',
-    items: [
-      { name: 'أحذية', icon: '👟', price: '20 ريال', desc: 'تنظيف فاخر للأحذية الجلدية والقماشية والسويدي. مُعطَّرة ومُلمَّعة وتُعاد كالجديدة.' }
-    ],
-    express: false
-  },
-  {
-    id: 'express',
-    items: [
-      { name: 'كوي عاجل',              icon: '👔', price: '10 ريال', desc: 'كوي سريع في نفس اليوم لأي قطعة ملابس. مكوي بالبخار باحترافية وجاهز في غضون ساعات.' },
-      { name: 'غسيل وكوي عاجل',       icon: '🫧', price: '15 ريال', desc: 'خدمة غسيل وكوي كاملة سريعة تُنجز في نفس اليوم. مثالية للاحتياجات العاجلة.' },
-      { name: 'تنظيف جاف عاجل',       icon: '⚡', price: '20 ريال', desc: 'تنظيف جاف ذو أولوية مع تسليم سريع. مثالي للبدل والملابس الرسمية والأقمشة الحساسة.' }
-    ],
-    express: true
-  }
-];
-
-function setLanguage(lang) {
-  const html = document.documentElement;
-  const isAr = lang === 'ar';
-
-  // Track current language globally
-  currentLang = lang;
-
-  // Save preference
-  localStorage.setItem('qlLang', lang);
-
-  // Update html lang & dir
-  html.setAttribute('lang', lang);
-  html.setAttribute('dir', isAr ? 'rtl' : 'ltr');
-
-  // Update body font for Arabic
-  document.body.style.fontFamily = isAr ? "'Cairo', system-ui, sans-serif" : '';
-
-  // Update active button state (both desktop + mobile)
-  ['btn-en','btn-ar','mobile-btn-en','mobile-btn-ar'].forEach(id => {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const isEnBtn = id.includes('-en');
-    el.classList.toggle('active', isAr ? !isEnBtn : isEnBtn);
-  });
-
-  // Update cart modal language
-  applyCartLanguage(lang);
-
-  if (isAr) {
-    applyArabic();
-  } else {
-    applyEnglish();
-  }
-
-  // Update WhatsApp link messages
-  updateWaLinks();
-}
-
-function applyArabic() {
-  const t = translations.ar;
-
-  /* ---- HERO ---- */
-  const heroLabelSpan = document.querySelector('.hero-label span:last-child');
-  if (heroLabelSpan) heroLabelSpan.textContent = t['hero-label-text'];
-  const heroTitle = document.querySelector('.hero-title');
-  if (heroTitle) heroTitle.innerHTML = t['hero-title'];
-  const heroDesc = document.querySelector('.hero-desc');
-  if (heroDesc) heroDesc.textContent = t['hero-desc'];
-  const heroBtnServices = document.querySelector('a[href="#services"].btn');
-  if (heroBtnServices) heroBtnServices.textContent = t['hero-btn-services'];
-  const heroBtnWa = document.querySelector('#hero-wa-btn span[data-en]');
-  if (heroBtnWa) heroBtnWa.textContent = t['hero-btn-wa'];
-  const featRows = document.querySelectorAll('.hero-feat-row span');
-  ['hero-feat-1','hero-feat-2','hero-feat-3','hero-feat-4'].forEach((k,i) => { if(featRows[i]) featRows[i].textContent = t[k]; });
-  const badge1 = document.querySelector('.hero-badge-1 span[data-en]');
-  const badge2 = document.querySelector('.hero-badge-2 span[data-en]');
-  if (badge1) badge1.textContent = t['hero-badge-1'];
-  if (badge2) badge2.textContent = t['hero-badge-2'];
-  document.querySelectorAll('.hero-stat-label').forEach((el,i) => {
-    const keys = ['hero-stat-clients','hero-stat-rating','hero-stat-delivery'];
-    if(keys[i]) el.textContent = t[keys[i]];
-  });
-
-  /* ---- NAVBAR ---- */
-  const navItems = [
-    { href:'#about',        ar:'من نحن',   sel:'a[href="#about"]:not(.nav-cta)' },
-    { href:'#services',     ar:'الخدمات',  sel:'a[href="#services"]:not(.nav-cta)' },
-    { href:'#products',     ar:'المنتجات', sel:'a[href="#products"]:not(.nav-cta)' },
-    { href:'#gallery',      ar:'المعرض',   sel:'a[href="#gallery"]:not(.nav-cta)' },
-    { href:'#testimonials', ar:'التقييمات',sel:'a[href="#testimonials"]:not(.nav-cta)' },
-    { href:'#contact',      ar:'اتصل بنا', sel:'a[href="#contact"].nav-cta' },
-  ];
-  navItems.forEach(item => {
-    document.querySelectorAll(item.sel).forEach(el => { el.textContent = item.ar; });
-  });
-  // mobile nav
-  document.querySelectorAll('#mobile-nav a[href="#about"]').forEach(el => { el.textContent = 'من نحن'; });
-  document.querySelectorAll('#mobile-nav a[href="#services"]').forEach(el => { el.textContent = 'الخدمات'; });
-  document.querySelectorAll('#mobile-nav a[href="#products"]').forEach(el => { el.textContent = 'المنتجات'; });
-  document.querySelectorAll('#mobile-nav a[href="#gallery"]').forEach(el => { el.textContent = 'المعرض'; });
-  document.querySelectorAll('#mobile-nav a[href="#testimonials"]').forEach(el => { el.textContent = 'التقييمات'; });
-  document.querySelectorAll('#mobile-nav a[href="#contact"]').forEach(el => { el.textContent = 'اتصل بنا'; });
-
-  /* ---- ABOUT ---- */
-  const aboutLabel = document.querySelector('#about .section-label');
-  if (aboutLabel) aboutLabel.textContent = t['about-label'];
-  const aboutTitle = document.querySelector('#about .section-title');
-  if (aboutTitle) aboutTitle.innerHTML = t['about-title'];
-  const aboutSub = document.querySelector('#about .section-sub');
-  if (aboutSub) aboutSub.textContent = t['about-sub'];
-  const featData = [
-    { title:'feat-fast-title', desc:'feat-fast-desc' },
-    { title:'feat-pickup-title', desc:'feat-pickup-desc' },
-    { title:'feat-premium-title', desc:'feat-premium-desc' },
-    { title:'feat-affordable-title', desc:'feat-affordable-desc' },
-  ];
-  document.querySelectorAll('#about .feature-card').forEach((card,i) => {
-    if(!featData[i]) return;
-    const te = card.querySelector('.feature-title'); const de = card.querySelector('.feature-desc');
-    if(te) te.textContent = t[featData[i].title];
-    if(de) de.textContent = t[featData[i].desc];
-  });
-
-  /* ---- SERVICES ---- */
-  applyServicesSection('ar');
-
-  /* ---- PRODUCTS ---- */
-  applyProductsSection('ar');
-
-  /* ---- GALLERY ---- */
-  applyGallerySection('ar');
-
-  /* ---- TESTIMONIALS ---- */
-  applyTestimonialsSection('ar');
-
-  /* ---- CONTACT ---- */
-  applyContactSection('ar');
-
-  /* ---- FOOTER ---- */
-  applyFooterSection('ar');
-
-  // RTL direction on Hero + About + Services + Products + Gallery + Testimonials + Contact + Footer
-  ['hero','about','services','products','gallery','testimonials','contact','footer'].forEach(id => {
-    const sec = document.getElementById(id);
-    if (sec) { sec.style.direction = 'rtl'; sec.style.fontFamily = "'Cairo', system-ui, sans-serif"; }
-  });
-  // CRITICAL: keep slider internals LTR so translateX math stays correct
-  const sliderWrap = document.querySelector('.testimonials-slider-wrap');
-  if (sliderWrap) sliderWrap.style.direction = 'ltr';
-  const sliderClip = document.querySelector('.testimonials-slider-clip');
-  if (sliderClip) sliderClip.style.direction = 'ltr';
-  const sliderTrack = document.getElementById('testimonials-track');
-  if (sliderTrack) sliderTrack.style.direction = 'ltr';
-}
-
-function applyEnglish() {
-  /* ---- HERO ---- */
-  const heroLabelSpan = document.querySelector('.hero-label span:last-child');
-  if (heroLabelSpan) heroLabelSpan.textContent = 'Trusted by 2,000+ Happy Customers';
-  const heroTitle = document.querySelector('.hero-title');
-  if (heroTitle) heroTitle.innerHTML = 'Professional<br><em>Laundry &amp; Dry</em><br>Cleaning Services';
-  const heroDesc = document.querySelector('.hero-desc');
-  if (heroDesc) heroDesc.textContent = "We handle your clothes with exceptional care — fast pickup & delivery, premium cleaning, and affordable prices you'll love.";
-  const heroBtnServices = document.querySelector('a[href="#services"].btn');
-  if (heroBtnServices) heroBtnServices.textContent = 'Browse Services →';
-  const heroBtnWa = document.querySelector('#hero-wa-btn span[data-en]');
-  if (heroBtnWa) heroBtnWa.textContent = 'Contact on WhatsApp';
-  const featTexts = ['Free Pickup & Delivery','Eco-Friendly Products','Same-Day Service','Premium Quality'];
-  document.querySelectorAll('.hero-feat-row span').forEach((el,i) => { if(featTexts[i]) el.textContent = featTexts[i]; });
-  const badge1 = document.querySelector('.hero-badge-1 span[data-en]');
-  const badge2 = document.querySelector('.hero-badge-2 span[data-en]');
-  if (badge1) badge1.textContent = 'Order Ready in 24h';
-  if (badge2) badge2.textContent = 'Free Delivery';
-  const statTexts = ['Happy Clients','Average Rating','Fast Delivery'];
-  document.querySelectorAll('.hero-stat-label').forEach((el,i) => { if(statTexts[i]) el.textContent = statTexts[i]; });
-
-  /* ---- NAVBAR ---- */
-  const navEn = [
-    { sel:'#navbar a[href="#about"]:not(.nav-cta)',        text:'About' },
-    { sel:'#navbar a[href="#services"]:not(.nav-cta)',     text:'Services' },
-    { sel:'#navbar a[href="#products"]:not(.nav-cta)',     text:'Products' },
-    { sel:'#navbar a[href="#gallery"]:not(.nav-cta)',      text:'Gallery' },
-    { sel:'#navbar a[href="#testimonials"]:not(.nav-cta)', text:'Reviews' },
-    { sel:'#navbar a[href="#contact"].nav-cta',            text:'Contact Us' },
-  ];
-  navEn.forEach(item => {
-    document.querySelectorAll(item.sel).forEach(el => { el.textContent = item.text; });
-  });
-  document.querySelectorAll('#mobile-nav a[href="#about"]').forEach(el => { el.textContent = 'About'; });
-  document.querySelectorAll('#mobile-nav a[href="#services"]').forEach(el => { el.textContent = 'Services'; });
-  document.querySelectorAll('#mobile-nav a[href="#products"]').forEach(el => { el.textContent = 'Products'; });
-  document.querySelectorAll('#mobile-nav a[href="#gallery"]').forEach(el => { el.textContent = 'Gallery'; });
-  document.querySelectorAll('#mobile-nav a[href="#testimonials"]').forEach(el => { el.textContent = 'Reviews'; });
-  document.querySelectorAll('#mobile-nav a[href="#contact"]').forEach(el => { el.textContent = 'Contact Us'; });
-
-  /* ---- ABOUT ---- */
-  const aboutLabel = document.querySelector('#about .section-label');
-  if (aboutLabel) aboutLabel.textContent = 'Who We Are';
-  const aboutTitle = document.querySelector('#about .section-title');
-  if (aboutTitle) aboutTitle.innerHTML = 'The Cleanest Clothes<br>Start Here';
-  const aboutSub = document.querySelector('#about .section-sub');
-  if (aboutSub) aboutSub.textContent = 'Quality Laundry has been serving our community with professional-grade cleaning services. We combine modern technology with eco-friendly products to deliver spotless results every time.';
-  const enFeatData = [
-    { title:'Fast Service', desc:'Same-day and 24-hour turnaround options available for all services.' },
-    { title:'Pickup & Delivery', desc:'Free door-to-door pickup and delivery within our service area.' },
-    { title:'Premium Cleaning', desc:'Professional-grade products that are gentle on fabrics and tough on stains.' },
-    { title:'Affordable Prices', desc:'Competitive pricing with no hidden fees. Quality you can afford.' },
-  ];
-  document.querySelectorAll('#about .feature-card').forEach((card,i) => {
-    if(!enFeatData[i]) return;
-    const te = card.querySelector('.feature-title'); const de = card.querySelector('.feature-desc');
-    if(te) te.textContent = enFeatData[i].title;
-    if(de) de.textContent = enFeatData[i].desc;
-  });
-
-  /* ---- SERVICES ---- */
-  applyServicesSection('en');
-
-  /* ---- PRODUCTS ---- */
-  applyProductsSection('en');
-
-  /* ---- GALLERY ---- */
-  applyGallerySection('en');
-
-  /* ---- TESTIMONIALS ---- */
-  applyTestimonialsSection('en');
-
-  /* ---- CONTACT ---- */
-  applyContactSection('en');
-
-  /* ---- FOOTER ---- */
-  applyFooterSection('en');
-
-  // Reset direction
-  ['hero','about','services','products','gallery','testimonials','contact','footer'].forEach(id => {
-    const sec = document.getElementById(id);
-    if (sec) { sec.style.direction = ''; sec.style.fontFamily = ''; }
-  });
-  // Reset slider direction
-  const sliderWrap = document.querySelector('.testimonials-slider-wrap');
-  if (sliderWrap) sliderWrap.style.direction = '';
-  const sliderClip = document.querySelector('.testimonials-slider-clip');
-  if (sliderClip) sliderClip.style.direction = '';
-  const sliderTrack = document.getElementById('testimonials-track');
-  if (sliderTrack) sliderTrack.style.direction = '';
-}
-
-/* ===== TESTIMONIALS SECTION LANGUAGE APPLY ===== */
-function applyTestimonialsSection(lang) {
-  const t = translations.ar;
-  const isAr = lang === 'ar';
-  const tstLabel = document.querySelector('#testimonials .section-label');
-  const tstTitle = document.querySelector('#testimonials .section-title');
-  const tstSub   = document.querySelector('#testimonials .section-sub');
-  if (tstLabel) tstLabel.textContent = isAr ? t['tst-label'] : 'Customer Stories';
-  if (tstTitle) tstTitle.textContent = isAr ? t['tst-title'] : 'What People Say';
-  if (tstSub)   tstSub.textContent   = isAr ? t['tst-sub']   : 'Real reviews from our happy customers who trust us with their garments.';
-}
-
-/* ===== CONTACT SECTION LANGUAGE APPLY ===== */
-function applyContactSection(lang) {
-  const t = translations.ar;
-  const isAr = lang === 'ar';
-
-  // Section header
-  const cLabel = document.querySelector('#contact .section-label');
-  const cTitle = document.querySelector('#contact .section-title');
-  const cSub   = document.querySelector('#contact .section-sub');
-  if (cLabel) cLabel.textContent = isAr ? t['contact-label'] : 'Get in Touch';
-  if (cTitle) cTitle.textContent = isAr ? t['contact-title'] : 'Contact Us';
-  if (cSub)   cSub.textContent   = isAr ? t['contact-sub']   : "Ready to experience premium laundry care? Reach out and we'll get back to you right away.";
-
-  // Info labels
-  const infoLabels = document.querySelectorAll('#contact .contact-info-label');
-  const arInfoLabels = [t['contact-lbl-phone'], t['contact-lbl-whatsapp'], t['contact-lbl-email'], t['contact-lbl-address'], t['contact-lbl-hours']];
-  const enInfoLabels = ['Phone Number', 'WhatsApp', 'Email Address', 'Our Address', 'Working Hours'];
-  infoLabels.forEach((el, i) => {
-    el.textContent = isAr ? (arInfoLabels[i] || el.textContent) : (enInfoLabels[i] || el.textContent);
-  });
-
-  // Address and hours values
-  const infoValues = document.querySelectorAll('#contact .contact-info-value');
-  if (infoValues[3]) infoValues[3].textContent = isAr ? t['contact-val-address'] : 'Umm Qarn - Street 260 - Building 81 - Shop 4 - Doha, Qatar';
-  if (infoValues[4]) infoValues[4].textContent = isAr ? t['contact-val-hours']   : 'Open 24/7';
-
-  // Form labels
-  const nameLabel = document.querySelector('label[for="form-name"]');
-  const phoneLabel = document.querySelector('label[for="form-phone"]');
-  const serviceLabel = document.querySelector('label[for="form-service"]');
-  const messageLabel = document.querySelector('label[for="form-message"]');
-  if (nameLabel)    nameLabel.textContent    = isAr ? t['contact-form-name']    : 'Full Name *';
-  if (phoneLabel)   phoneLabel.textContent   = isAr ? t['contact-form-phone']   : 'Phone Number *';
-  if (serviceLabel) serviceLabel.textContent = isAr ? t['contact-form-service'] : 'Service Needed';
-  if (messageLabel) messageLabel.textContent = isAr ? t['contact-form-message'] : 'Message';
-
-  // Placeholders
-  const nameInput = document.getElementById('form-name');
-  const phoneInput = document.getElementById('form-phone');
-  const msgInput = document.getElementById('form-message');
-  if (nameInput)  nameInput.placeholder  = isAr ? t['contact-form-name-ph']  : 'Your full name';
-  if (phoneInput) phoneInput.placeholder = isAr ? t['contact-form-phone-ph'] : 'Your phone number';
-  if (msgInput)   msgInput.placeholder   = isAr ? t['contact-form-msg-ph']   : 'Tell us about your laundry needs...';
-
-  // Select options
-  const sel = document.getElementById('form-service');
-  if (sel && sel.options.length >= 6) {
-    sel.options[0].text = isAr ? t['contact-form-service-ph'] : 'Select a service...';
-    sel.options[1].text = isAr ? t['contact-form-opt1'] : 'Clothes Washing';
-    sel.options[2].text = isAr ? t['contact-form-opt2'] : 'Dry Cleaning';
-    sel.options[3].text = isAr ? t['contact-form-opt3'] : 'Ironing Service';
-    sel.options[4].text = isAr ? t['contact-form-opt4'] : 'Carpet Cleaning';
-    sel.options[5].text = isAr ? t['contact-form-opt5'] : 'Curtain Cleaning';
-    if (sel.options[6]) sel.options[6].text = isAr ? t['contact-form-opt6'] : 'Blankets & Bedding Cleaning';
-  }
-
-  // Submit button text
-  const submitBtn = document.querySelector('#contact button[onclick="submitForm()"] span[data-en]');
-  if (submitBtn) submitBtn.textContent = isAr ? t['contact-form-btn'] : 'Send via WhatsApp';
-}
-
-/* ===== FOOTER SECTION LANGUAGE APPLY ===== */
-function applyFooterSection(lang) {
-  const t = translations.ar;
-  const isAr = lang === 'ar';
-
-  // Tagline
-  const tagline = document.querySelector('.footer-tagline');
-  if (tagline) tagline.textContent = isAr ? t['footer-tagline'] : 'Professional cleaning services delivered with care, speed, and a smile.';
-
-  // Column titles
-  const colTitles = document.querySelectorAll('.footer-col-title');
-  const arColTitles = [t['footer-col-links'], t['footer-col-services'], t['footer-col-contact']];
-  const enColTitles = ['Quick Links', 'Services', 'Contact'];
-  colTitles.forEach((el, i) => {
-    el.textContent = isAr ? (arColTitles[i] || el.textContent) : (enColTitles[i] || el.textContent);
-  });
-
-  // Quick links
-  const quickLinks = document.querySelectorAll('#footer-quick-links li a');
-  const arQuickLinks = [t['footer-link-about'], t['footer-link-services'], t['footer-link-products'], t['footer-link-gallery']];
-  const enQuickLinks = ['About Us', 'Services', 'Products', 'Gallery'];
-  quickLinks.forEach((el, i) => {
-    el.textContent = isAr ? (arQuickLinks[i] || el.textContent) : (enQuickLinks[i] || el.textContent);
-  });
-
-  // Services links
-  const svcLinks = document.querySelectorAll('#footer-services-links li a');
-  const arSvcLinks = [t['footer-svc-1'], t['footer-svc-2'], t['footer-svc-3'], t['footer-svc-4']];
-  const enSvcLinks = ['Clothes Washing', 'Dry Cleaning', 'Ironing Service', 'Carpet Cleaning'];
-  svcLinks.forEach((el, i) => {
-    el.textContent = isAr ? (arSvcLinks[i] || el.textContent) : (enSvcLinks[i] || el.textContent);
-  });
-
-  // Contact column links (address & reviews)
-  const contactLinks = document.querySelectorAll('#footer-contact-links li a');
-  if (contactLinks[2]) contactLinks[2].textContent = isAr ? t['footer-link-address']  : 'Umm Qarn - Street 260 - Doha';
-  if (contactLinks[3]) contactLinks[3].textContent = isAr ? t['footer-link-reviews']  : 'Reviews';
-
-  // Copyright
-  const copyRights = document.querySelector('.footer-copy span[data-en]');
-  if (copyRights) copyRights.textContent = isAr ? t['footer-copy-rights'] : 'All rights reserved.';
-
-  const copyCrafted = document.querySelector('.footer-copy[data-en]');
-  if (copyCrafted) copyCrafted.textContent = isAr ? t['footer-copy-crafted'] : 'Crafted with ❤️ for clean clothes everywhere';
-}
-
-/* ===== PRODUCTS SECTION LANGUAGE APPLY ===== */
-function applyProductsSection(lang) {
-  const t = translations.ar;
-  const isAr = lang === 'ar';
-  // Section header
-  const prdLabel = document.querySelector('#products .section-label');
-  const prdTitle = document.querySelector('#products .section-title');
-  const prdSub   = document.querySelector('#products .section-sub');
-  if (prdLabel) prdLabel.textContent = isAr ? t['prd-section-label'] : 'Our Store';
-  if (prdTitle) prdTitle.textContent = isAr ? t['prd-section-title'] : 'Laundry Products';
-  if (prdSub)   prdSub.textContent   = isAr ? t['prd-section-sub']   : 'Professional-grade laundry products available for home delivery — order directly via WhatsApp.';
-  // Re-render cards
-  renderProducts(lang);
-}
-
-/* ===== GALLERY SECTION LANGUAGE APPLY ===== */
-function applyGallerySection(lang) {
-  const t = translations.ar;
-  const isAr = lang === 'ar';
-  // Section header
-  const galLabel = document.querySelector('#gallery .section-label');
-  const galTitle = document.querySelector('#gallery .section-title');
-  const galSub   = document.querySelector('#gallery .section-sub');
-  if (galLabel) galLabel.textContent = isAr ? t['gal-section-label'] : 'Our Work';
-  if (galTitle) galTitle.textContent = isAr ? t['gal-section-title'] : 'See the Difference';
-  if (galSub)   galSub.textContent   = isAr ? t['gal-section-sub']   : 'A glimpse inside our facility and the results we deliver to every customer.';
-  // Re-render gallery with translated labels
-  renderGallery(lang);
-}
-
-/* ===== SERVICES SECTION LANGUAGE APPLY ===== */
-function applyServicesSection(lang) {
-  const t = translations.ar;
-  const isAr = lang === 'ar';
-  const addToCartLabel = isAr ? t['add-to-cart'] : 'Add to Cart';
-  const expressTagLabel = isAr ? t['express-tag'] : 'Express';
-
-  // Section header
-  const svcLabel = document.querySelector('#services .section-label');
-  const svcTitle = document.querySelector('#services .section-title');
-  const svcSub   = document.querySelector('#services .section-sub');
-  if (svcLabel) svcLabel.textContent = isAr ? t['svc-section-label'] : 'What We Offer';
-  if (svcTitle) svcTitle.textContent = isAr ? t['svc-section-title'] : 'Our Services';
-  if (svcSub)   svcSub.textContent   = isAr ? t['svc-section-sub']   : 'From everyday garments to delicate fabrics — we handle it all with care and precision.';
-
-  // Featured offers
-  const offerCards = document.querySelectorAll('.featured-offer-card');
-  const offerData = [
-    { badge:'offer1-badge', title:'offer1-title', price:'offer1-price', desc:'offer1-desc', btn:'offer1-btn',
-      en: { badge:'⚡ LIMITED', title:'Family Laundry Bag', price:'Wash & Iron - 99 QAR', desc:"Perfect for families! Get complete laundry and ironing service for your entire household at an unbeatable price. Ideal for weekly family laundry needs.", btn:'Add to Cart' } },
-    { badge:'offer2-badge', title:'offer2-title', price:'offer2-price', desc:'offer2-desc', btn:'offer2-btn',
-      en: { badge:'🚀 POPULAR', title:'Express Cleaning Bundle', price:'Complete Service - 149 QAR', desc:"Get everything done fast! Includes wash, dry cleaning, ironing, and express delivery. Perfect for busy professionals who need quality results quickly.", btn:'Add to Cart' } },
-  ];
-  offerCards.forEach((card, i) => {
-    if (!offerData[i]) return;
-    const d = offerData[i];
-    const badgeEl = card.querySelector('.featured-offer-badge');
-    const titleEl = card.querySelector('.featured-offer-title');
-    const priceEl = card.querySelector('.featured-offer-price');
-    const descEl  = card.querySelector('.featured-offer-desc');
-    const btnEl   = card.querySelector('.featured-offer-btn');
-    if (badgeEl) badgeEl.textContent = isAr ? t[d.badge] : d.en.badge;
-    if (titleEl) titleEl.textContent = isAr ? t[d.title] : d.en.title;
-    if (priceEl) priceEl.textContent = isAr ? t[d.price] : d.en.price;
-    if (descEl)  descEl.textContent  = isAr ? t[d.desc]  : d.en.desc;
-    if (btnEl) {
-      // Keep the SVG icon, just update text node
-      const svg = btnEl.querySelector('svg');
-      btnEl.innerHTML = '';
-      if (svg) btnEl.appendChild(svg);
-      btnEl.appendChild(document.createTextNode(' ' + (isAr ? t[d.btn] : d.en.btn)));
-    }
-  });
-
-  // Desktop tabs
-  const tabMap = {
-    everyday:  isAr ? t['tab-everyday']  : '👕 Everyday Clothing',
-    suits:     isAr ? t['tab-suits']     : '🥼 Suits & Formal',
-    women:     isAr ? t['tab-women']     : '👗 Women\'s Garments',
-    bedding:   isAr ? t['tab-bedding']   : '🛏️ Bedding & Household',
-    curtains:  isAr ? t['tab-curtains']  : '🪟 Curtains & Upholstery',
-    carpet:    isAr ? t['tab-carpet']    : '🏠 Carpet Cleaning',
-    shoes:     isAr ? t['tab-shoes']     : '👟 Shoes Cleaning',
-    express:   isAr ? t['tab-express']   : '⚡ Express Service',
-  };
-  document.querySelectorAll('.svc-tab').forEach(btn => {
-    const onclick = btn.getAttribute('onclick') || '';
-    const m = onclick.match(/switchCat\('(\w+)'\)/);
-    if (m && tabMap[m[1]]) btn.textContent = tabMap[m[1]];
-  });
-
-  // Update svcCatLabels used by mobile switcher
-  Object.keys(tabMap).forEach(k => { svcCatLabels[k] = tabMap[k]; });
-  // Refresh mobile label
-  const mobileLabel = document.getElementById('svc-mobile-label');
-  if (mobileLabel) mobileLabel.textContent = tabMap[svcCatOrder[svcCurrentIdx]] || mobileLabel.textContent;
-
-  // Category headers
-  const catHeaderMap = {
-    everyday: { name:'cat-everyday-name', sub:'cat-everyday-sub', price:'cat-everyday-price',
-      en: { name:'Everyday Clothing', sub:'Thobes, shirts, pants, and all daily wear garments', price:'✦ Starting From 3 QR' } },
-    suits:    { name:'cat-suits-name', sub:'cat-suits-sub', price:'cat-suits-price',
-      en: { name:'Suits & Formal Wear', sub:"Professional dry cleaning for men's formal attire", price:'✦ Starting From 6 QR' } },
-    women:    { name:'cat-women-name', sub:'cat-women-sub', price:'cat-women-price',
-      en: { name:"Women's Garments", sub:"Dresses, abayas, hijabs, and ladies' apparel", price:'✦ Starting From 3 QR' } },
-    bedding:  { name:'cat-bedding-name', sub:'cat-bedding-sub', price:'cat-bedding-price',
-      en: { name:'Bedding & Household Items', sub:'Sheets, blankets, towels, and bath linens', price:'✦ Starting From 2 QR' } },
-    curtains: { name:'cat-curtains-name', sub:'cat-curtains-sub', price:'cat-curtains-price',
-      en: { name:'Curtains & Upholstery', sub:'Curtains and sofa covers — all sizes', price:'✦ Starting From 3 QR' } },
-    carpet:   { name:'cat-carpet-name', sub:'cat-carpet-sub', price:'cat-carpet-price',
-      en: { name:'Carpet Cleaning', sub:'Deep-clean carpets with professional equipment', price:'✦ 10 QR / m²' } },
-    shoes:    { name:'cat-shoes-name', sub:'cat-shoes-sub', price:'cat-shoes-price',
-      en: { name:'Shoes Cleaning', sub:'Premium cleaning and care for all shoe types', price:'✦ 20 QR per pair' } },
-    express:  { name:'cat-express-name', sub:'cat-express-sub', price:'cat-express-price',
-      en: { name:'Express Laundry Services', sub:'Same-day urgent turnaround — fast and reliable', price:'⚡ Express Service' } },
-  };
-  Object.entries(catHeaderMap).forEach(([id, d]) => {
-    const cat = document.getElementById('cat-' + id);
-    if (!cat) return;
-    const nameEl  = cat.querySelector('.svc-cat-name');
-    const subEl   = cat.querySelector('.svc-cat-sub');
-    const priceEl = cat.querySelector('.svc-cat-price-badge');
-    if (nameEl)  nameEl.textContent  = isAr ? t[d.name]  : d.en.name;
-    if (subEl)   subEl.textContent   = isAr ? t[d.sub]   : d.en.sub;
-    if (priceEl) priceEl.textContent = isAr ? t[d.price] : d.en.price;
-  });
-
-  // Features strip
-  const stripTexts = isAr
-    ? [t['strip-dry'], t['strip-wash'], t['strip-express'], t['strip-carpet'], t['strip-curtain'], t['strip-sofa'], t['strip-shoes'], t['strip-household']]
-    : ['Professional Dry Cleaning','Wash & Press','Express Service','Carpet Cleaning','Curtain Cleaning','Sofa Cover Cleaning','Shoes Cleaning','Household Laundry'];
-  document.querySelectorAll('.svc-feature-pill span').forEach((el,i) => { if(stripTexts[i]) el.textContent = stripTexts[i]; });
-
-  // Re-render service item cards with correct language data
-  const dataSource = isAr ? serviceCategoriesAr : serviceCategories;
-  dataSource.forEach(cat => {
-    const grid = document.getElementById('grid-' + cat.id);
-    if (!grid) return;
-    grid.innerHTML = '';
-    cat.items.forEach(item => {
-      const safeN = item.name.replace(/'/g, "\\'");
-      const safeP = item.price.replace(/'/g, "\\'");
-      grid.innerHTML += `
-        <div class="svc-item-card reveal visible${cat.express ? ' express-card' : ''}">
-          ${cat.express ? `<span class="express-tag">${expressTagLabel}</span>` : ''}
-          <div class="svc-item-icon">${item.icon}</div>
-          <div class="svc-item-name">${item.name}</div>
-          <div style="font-size:0.78rem;color:var(--text-light);line-height:1.5;margin-top:2px;">${item.desc}</div>
-          <div style="font-size:0.88rem;font-weight:700;color:var(--brand-secondary);margin-top:4px;">${item.price}</div>
-          <button onclick="addToCart('${safeN}', '${safeP}')" class="svc-item-wa" style="border:none;cursor:pointer;text-decoration:none;display:inline-flex;">
-            ${WA_SVG} ${addToCartLabel}
-          </button>
-        </div>`;
-    });
-  });
-}
-
-// Init language on page load
-(function initLang() {
-  const saved = localStorage.getItem('qlLang') || 'en';
-  if (saved === 'ar') {
-    setLanguage('ar');
-  }
-})();
+});
 </script>
 </body>
 </html>
